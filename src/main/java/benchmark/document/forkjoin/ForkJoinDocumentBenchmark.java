@@ -34,12 +34,12 @@ public class ForkJoinDocumentBenchmark extends DocumentBenchmarkDef {
     private final MapReduce<UserTagsBundle> mapReduce;
 
     public ForkJoinDocumentBenchmark(DocumentGenerator documentGenerator, int numThreads) {
-	super(documentGenerator);
-	mapReduce = new MapReduce<>(numThreads);
+	    super(documentGenerator);
+	    mapReduce = new MapReduce<>(numThreads);
     }
 
     @Override
     public Object execute() {
-	return mapReduce.execute(new DocumentInput(documents, 0, documents.length));
+	    return mapReduce.compute(new DocumentInput(documents, 0, documents.length));
     }
 }

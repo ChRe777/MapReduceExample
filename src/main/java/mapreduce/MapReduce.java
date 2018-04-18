@@ -33,14 +33,22 @@ public class MapReduce<T> {
     private final ForkJoinPool pool;
 
     public MapReduce(int numThreads) {
-	this.pool = new ForkJoinPool(numThreads);
+
+	    this.pool = new ForkJoinPool(numThreads);
+
     }
 
-    public T execute(Input<T> input) {
-	ForkJoinTask<Output<T>> task = new MapReduceTask<T>(input);
+    /**
+     * Execute
+     * @param input
+     * @return
+     */
+    public T compute(Input<T> input) {
 
-	Output<T> output = pool.invoke(task);
+	    ForkJoinTask<Output<T>> task = new MapReduceTask<T>(input);
 
-	return output.getResult();
+	    Output<T> output = pool.invoke(task);
+
+	    return output.getResult();
     }
 }

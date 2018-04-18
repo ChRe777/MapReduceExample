@@ -11,7 +11,7 @@
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
- * limitations under the License. 
+ * limitations under the License.
  */
 
 package document;
@@ -26,7 +26,7 @@ import java.util.Set;
  * Document generator that creates documents according to the specified configuration. All
  * randomness is based on the seed provided, so that the exact same data can be computed whenever
  * desired.
- * 
+ *
  * @author patrick.peschlow
  */
 public class DocumentGenerator {
@@ -48,77 +48,77 @@ public class DocumentGenerator {
     private final Random random;
 
     public DocumentGenerator(DocumentGeneratorConfig config) {
-	numDocuments = config.getNumDocuments();
-	maxUsersPerDocument = config.getMaxUsersPerDocument();
-	maxTagsPerDocument = config.getMaxTagsPerDocument();
-	allUsers = new String[config.getUsers().size()];
-	config.getUsers().toArray(allUsers);
-	allTags = new String[config.getTags().size()];
-	config.getTags().toArray(allTags);
-	seed = config.getSeed();
-	unbalancedConfig = config.getUnbalancedConfig();
-	random = new Random(seed);
+        numDocuments = config.getNumDocuments();
+        maxUsersPerDocument = config.getMaxUsersPerDocument();
+        maxTagsPerDocument = config.getMaxTagsPerDocument();
+        allUsers = new String[config.getUsers().size()];
+        config.getUsers().toArray(allUsers);
+        allTags = new String[config.getTags().size()];
+        config.getTags().toArray(allTags);
+        seed = config.getSeed();
+        unbalancedConfig = config.getUnbalancedConfig();
+        random = new Random(seed);
     }
 
     public Document[] generateDocuments() {
-	System.out.println("Generating an array of " + numDocuments + " documents with seed "
-		+ seed);
+        System.out.println("Generating an array of " + numDocuments + " documents with seed "
+                + seed);
 
-	Document[] documents = new Document[numDocuments];
-	for (int i = 0; i < numDocuments; i++) {
-	    Set<String> documentUsers = generateDocumentUsers(i);
-	    List<String> documentTags = generateDocumentTags(i);
-	    documents[i] = new Document(documentUsers, documentTags);
-	}
+        Document[] documents = new Document[numDocuments];
+        for (int i = 0; i < numDocuments; i++) {
+            Set<String> documentUsers = generateDocumentUsers(i);
+            List<String> documentTags = generateDocumentTags(i);
+            documents[i] = new Document(documentUsers, documentTags);
+        }
 
-	return documents;
+        return documents;
     }
 
     private Set<String> generateDocumentUsers(int i) {
-	Set<String> documentUsers = new HashSet<>();
-	int numUsers = random.nextInt(maxUsersPerDocument) + 1;
-	if (numUsers == 0) {
-	    return new HashSet<>();
-	}
+        Set<String> documentUsers = new HashSet<>();
+        int numUsers = random.nextInt(maxUsersPerDocument) + 1;
+        if (numUsers == 0) {
+            return new HashSet<>();
+        }
 
-	if (isUnbalancedDocument(i)) {
-	    numUsers = Math.min(numUsers * unbalancedConfig.getFactor(), allUsers.length);
-	}
-	shuffle(allUsers);
-	for (int j = 0; j < numUsers; j++) {
-	    documentUsers.add(allUsers[j]);
-	}
-	return documentUsers;
+        if (isUnbalancedDocument(i)) {
+            numUsers = Math.min(numUsers * unbalancedConfig.getFactor(), allUsers.length);
+        }
+        shuffle(allUsers);
+        for (int j = 0; j < numUsers; j++) {
+            documentUsers.add(allUsers[j]);
+        }
+        return documentUsers;
     }
 
     private List<String> generateDocumentTags(int i) {
-	List<String> documentTags = new ArrayList<>();
-	int numTags = random.nextInt(maxTagsPerDocument) + 1;
-	if (numTags == 0) {
-	    return new ArrayList<>();
-	}
+        List<String> documentTags = new ArrayList<>();
+        int numTags = random.nextInt(maxTagsPerDocument) + 1;
+        if (numTags == 0) {
+            return new ArrayList<>();
+        }
 
-	if (isUnbalancedDocument(i)) {
-	    numTags = Math.min(numTags * unbalancedConfig.getFactor(), allTags.length);
-	}
-	shuffle(allTags);
-	for (int j = 0; j < numTags; j++) {
-	    documentTags.add(allTags[j]);
-	}
-	return documentTags;
+        if (isUnbalancedDocument(i)) {
+            numTags = Math.min(numTags * unbalancedConfig.getFactor(), allTags.length);
+        }
+        shuffle(allTags);
+        for (int j = 0; j < numTags; j++) {
+            documentTags.add(allTags[j]);
+        }
+        return documentTags;
     }
 
     private boolean isUnbalancedDocument(int i) {
-	return unbalancedConfig != null && i >= unbalancedConfig.getUnbalancedIntervalLo()
-		&& i < unbalancedConfig.getUnbalancedIntervalHi();
+        return unbalancedConfig != null && i >= unbalancedConfig.getUnbalancedIntervalLo()
+                && i < unbalancedConfig.getUnbalancedIntervalHi();
     }
 
     private void shuffle(String[] array) {
-	for (int i = 0; i < array.length; i++) {
-	    int dst = random.nextInt(array.length);
-	    String tmp = array[i];
-	    array[i] = array[dst];
-	    array[dst] = tmp;
-	}
+        for (int i = 0; i < array.length; i++) {
+            int dst = random.nextInt(array.length);
+            String tmp = array[i];
+            array[i] = array[dst];
+            array[dst] = tmp;
+        }
     }
 }

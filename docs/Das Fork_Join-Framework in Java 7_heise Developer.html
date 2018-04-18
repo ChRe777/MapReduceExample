@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style scope="embetty-video">undefined.embetty-video {
+  css
+}</style><style scope="embetty-tweet">embetty-tweet {
+  width: 100%;
+  display: block;
+  font-family: var(--embetty-font-family, Helvetica, Roboto, "Segoe UI", Calibri, sans-serif);
+  border: 1px solid var(--embetty-border-color, #ccc);
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+embetty-tweet.answered {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border: 0;
+  padding: 0;
+}
+
+embetty-tweet.answered header.embetty-tweet {
+  padding-bottom: 0.5rem;
+}
+
+embetty-tweet.answered article.embetty-tweet {
+  border-left: 4px solid #bbb;
+    margin-left: 16px;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+embetty-tweet.answered article.embetty-tweet p.embetty-tweet {
+  font-size: 14px;
+}
+
+embetty-tweet.answered article.embetty-tweet #created-at.embetty-tweet {
+  display: none;
+}
+
+embetty-tweet {
+  max-width: 642px;
+  padding: 2rem 2.5rem;
+}
+
+embetty-tweet header.embetty-tweet {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: var(--embetty-spacing, 1rem);
+}
+
+embetty-tweet header.embetty-tweet img.embetty-tweet {
+  width: 36px;
+      height: 36px;
+      border-radius: 50%;
+}
+
+embetty-tweet header.embetty-tweet > span.embetty-tweet {
+  display: inline-block;
+      margin: 0 var(--embetty-spacing, 1rem);
+}
+
+embetty-tweet header.embetty-tweet strong.embetty-tweet {
+  font-size: 16px;
+      display: block;
+}
+
+embetty-tweet header.embetty-tweet a.embetty-tweet,embetty-tweet header.embetty-tweet a.embetty-tweet:hover {
+  font-size: 14px;
+      color: #697882;
+      text-decoration: none;
+}
+
+embetty-tweet article.embetty-tweet span.embetty-tweet {
+  display: block;
+}
+
+embetty-tweet article.embetty-tweet p.embetty-tweet {
+  margin: 0 auto 0.5rem;
+    line-height: 1.4;
+    font-size: 20px;
+    letter-spacing: .01em;
+}
+
+embetty-tweet article.embetty-tweet p.embetty-tweet a.embetty-tweet {
+  color: #012469;
+      text-decoration: none;
+}
+
+embetty-tweet article.embetty-tweet p.embetty-tweet a.embetty-tweet:hover {
+  text-decoration: underline;
+}
+
+embetty-tweet #media.embetty-tweet a.embetty-tweet {
+  display: block;
+    height: 100%;
+}
+
+embetty-tweet #media.embetty-tweet a.embetty-tweet:not(:first-child) {
+  display: none;
+}
+
+embetty-tweet #media.embetty-tweet img.embetty-tweet {
+  max-width: 100%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+@media (min-width: 600px) {
+embetty-tweet #media.embetty-tweet {
+  display: grid;
+      grid-column-gap: 1px;
+      grid-row-gap: 1px;
+}
+
+embetty-tweet #media.embetty-tweet a.embetty-tweet:not(:first-child) {
+  display: block;
+}
+
+embetty-tweet #media.media-2.embetty-tweet {
+  grid-template-columns: 50% 50%;
+}
+
+embetty-tweet #media.media-3.embetty-tweet {
+  grid-template-columns: auto 40%;
+}
+
+embetty-tweet #media.media-3.embetty-tweet a.embetty-tweet:first-child {
+  grid-row: 1 / span 2;
+}
+
+embetty-tweet #media.media-4.embetty-tweet {
+  grid-template-columns: auto 20%;
+}
+
+embetty-tweet #media.media-4.embetty-tweet a.embetty-tweet:first-child {
+  grid-row: 1 / span 3;
+}
+
+}
+
+embetty-tweet #links.embetty-tweet {
+  border: 1px solid var(--embetty-border-color, #ccc);
+    border-width: 1px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #14171a;
+    font-size: 14px;
+}
+
+embetty-tweet #links.embetty-tweet:hover {
+  background-color: #f5f8fa;
+      border-color: rgba(136, 153, 166, 0.5);
+      -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+      transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+embetty-tweet #links.embetty-tweet img.embetty-tweet {
+  max-width: 100%;
+      height: 125px;
+      width: 125px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      display: inline-block;
+}
+
+embetty-tweet #links.embetty-tweet > *.embetty-tweet:last-child {
+  margin-bottom: 0;
+}
+
+embetty-tweet #links.embetty-tweet #link-body.embetty-tweet {
+  display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: calc(var(--embetty-spacing, 1rem) / 2);
+      max-width: calc(100% - 125px - var(--embetty-spacing, 1rem));
+}
+
+embetty-tweet #links.embetty-tweet h3.embetty-tweet {
+  font-size: 14px;
+      line-height: 1.3;
+      margin: 0 0 calc(var(--embetty-spacing, 1rem) / 7);
+}
+
+embetty-tweet #links.embetty-tweet p.embetty-tweet {
+  -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+              hyphens: auto;
+      line-height: 18px;
+      font-size: 14px;
+      margin: calc(var(--embetty-spacing, 1rem) / 7) 0;
+}
+
+embetty-tweet #links.embetty-tweet span.embetty-tweet {
+  margin-top: auto;
+      color: #999;
+}
+
+embetty-tweet #created-at.embetty-tweet {
+  margin-top: 1rem;
+    display: block;
+    font-size: 90%;
+    color: #777;
+    text-decoration: none;
+}
+
+embetty-tweet #created-at.embetty-tweet svg.embetty-tweet {
+  height: 22px;
+      vertical-align: middle;
+}
+
+embetty-tweet {
+  width: 100%;
+  display: block;
+  font-family: var(--embetty-font-family, Helvetica, Roboto, "Segoe UI", Calibri, sans-serif);
+  border: 1px solid var(--embetty-border-color, #ccc);
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+embetty-tweet.answered {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border: 0;
+  padding: 0;
+}
+
+embetty-tweet.answered header.embetty-tweet {
+  padding-bottom: 0.5rem;
+}
+
+embetty-tweet.answered article.embetty-tweet {
+  border-left: 4px solid #bbb;
+    margin-left: 16px;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+embetty-tweet.answered article.embetty-tweet p.embetty-tweet {
+  font-size: 14px;
+}
+
+embetty-tweet.answered article.embetty-tweet #created-at.embetty-tweet {
+  display: none;
+}
+
+embetty-tweet {
+  max-width: 642px;
+  padding: 2rem 2.5rem;
+}
+
+embetty-tweet header.embetty-tweet {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: var(--embetty-spacing, 1rem);
+}
+
+embetty-tweet header.embetty-tweet img.embetty-tweet {
+  width: 36px;
+      height: 36px;
+      border-radius: 50%;
+}
+
+embetty-tweet header.embetty-tweet > span.embetty-tweet {
+  display: inline-block;
+      margin: 0 var(--embetty-spacing, 1rem);
+}
+
+embetty-tweet header.embetty-tweet strong.embetty-tweet {
+  font-size: 16px;
+      display: block;
+}
+
+embetty-tweet header.embetty-tweet a.embetty-tweet,embetty-tweet header.embetty-tweet a.embetty-tweet:hover {
+  font-size: 14px;
+      color: #697882;
+      text-decoration: none;
+}
+
+embetty-tweet article.embetty-tweet span.embetty-tweet {
+  display: block;
+}
+
+embetty-tweet article.embetty-tweet p.embetty-tweet {
+  margin: 0 auto 0.5rem;
+    line-height: 1.4;
+    font-size: 20px;
+    letter-spacing: .01em;
+}
+
+embetty-tweet article.embetty-tweet p.embetty-tweet a.embetty-tweet {
+  color: #012469;
+      text-decoration: none;
+}
+
+embetty-tweet article.embetty-tweet p.embetty-tweet a.embetty-tweet:hover {
+  text-decoration: underline;
+}
+
+embetty-tweet #media.embetty-tweet a.embetty-tweet {
+  display: block;
+    height: 100%;
+}
+
+embetty-tweet #media.embetty-tweet a.embetty-tweet:not(:first-child) {
+  display: none;
+}
+
+embetty-tweet #media.embetty-tweet img.embetty-tweet {
+  max-width: 100%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+@media (min-width: 600px) {
+embetty-tweet #media.embetty-tweet {
+  display: grid;
+      grid-column-gap: 1px;
+      grid-row-gap: 1px;
+}
+
+embetty-tweet #media.embetty-tweet a.embetty-tweet:not(:first-child) {
+  display: block;
+}
+
+embetty-tweet #media.media-2.embetty-tweet {
+  grid-template-columns: 50% 50%;
+}
+
+embetty-tweet #media.media-3.embetty-tweet {
+  grid-template-columns: auto 40%;
+}
+
+embetty-tweet #media.media-3.embetty-tweet a.embetty-tweet:first-child {
+  grid-row: 1 / span 2;
+}
+
+embetty-tweet #media.media-4.embetty-tweet {
+  grid-template-columns: auto 20%;
+}
+
+embetty-tweet #media.media-4.embetty-tweet a.embetty-tweet:first-child {
+  grid-row: 1 / span 3;
+}
+
+}
+
+embetty-tweet #links.embetty-tweet {
+  border: 1px solid var(--embetty-border-color, #ccc);
+    border-width: 1px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #14171a;
+    font-size: 14px;
+}
+
+embetty-tweet #links.embetty-tweet:hover {
+  background-color: #f5f8fa;
+      border-color: rgba(136, 153, 166, 0.5);
+      -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+      transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+embetty-tweet #links.embetty-tweet img.embetty-tweet {
+  max-width: 100%;
+      height: 125px;
+      width: 125px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      display: inline-block;
+}
+
+embetty-tweet #links.embetty-tweet > *.embetty-tweet:last-child {
+  margin-bottom: 0;
+}
+
+embetty-tweet #links.embetty-tweet #link-body.embetty-tweet {
+  display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: calc(var(--embetty-spacing, 1rem) / 2);
+      max-width: calc(100% - 125px - var(--embetty-spacing, 1rem));
+}
+
+embetty-tweet #links.embetty-tweet h3.embetty-tweet {
+  font-size: 14px;
+      line-height: 1.3;
+      margin: 0 0 calc(var(--embetty-spacing, 1rem) / 7);
+}
+
+embetty-tweet #links.embetty-tweet p.embetty-tweet {
+  -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+              hyphens: auto;
+      line-height: 18px;
+      font-size: 14px;
+      margin: calc(var(--embetty-spacing, 1rem) / 7) 0;
+}
+
+embetty-tweet #links.embetty-tweet span.embetty-tweet {
+  margin-top: auto;
+      color: #999;
+}
+
+embetty-tweet #created-at.embetty-tweet {
+  margin-top: 1rem;
+    display: block;
+    font-size: 90%;
+    color: #777;
+    text-decoration: none;
+}
+
+embetty-tweet #created-at.embetty-tweet svg.embetty-tweet {
+  height: 22px;
+      vertical-align: middle;
+}
+
+.cls-1.embetty-tweet {
+  fill:none;
+}
+
+.cls-2.embetty-tweet {
+  fill:#1da1f2;
+}</style><!-- Shady DOM styles for a-loader --><!-- Shady DOM styles for a-img --><!-- Shady DOM styles for a-tabs --><!-- Shady DOM styles for a-tab-list --><!-- Shady DOM styles for a-tab --><!-- Shady DOM styles for a-tab-content --><!-- Shady DOM styles for a-tab-nav --><!-- Shady DOM styles for a-collapse --><!-- Shady DOM styles for embetty-tweet --><!-- Shady DOM styles for embetty-video --><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    <title>
+        Das Fork/Join-Framework in Java 7 |
+        heise Developer
+    </title>
+    
+
+
+
+
+
+<meta charset="utf-8">
+<meta name="publisher" content="Heise Medien">
+
+
+
+  <meta name="viewport" content="width=1175">
+
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+<link rel="dns-prefetch" href="https://1.f.ix.de/">
+<link rel="dns-prefetch" href="https://m.heise.de/">
+<link rel="dns-prefetch" href="https://script.ioam.de/">
+<link rel="dns-prefetch" href="https://ad.yieldlab.net/">
+<link rel="dns-prefetch" href="https://www.googletagservices.com/">
+
+
+  <link rel="canonical" href="https://www.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html">
+
+
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html" id="mobil_variante">
+
+
+
+
+
+
+
+
+
+
+  <meta name="date" content="2012-11-23T14:39:00+01:00">
+
+
+  <meta name="author" content="Patrick Peschlow">
+
+
+  <meta name="title" content="Das Fork/Join-Framework in Java 7">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="description" content="Wann sollte man den neuen ForkJoinPool dem klassischen ThreadPoolExecutor vorziehen, und wann lässt man es besser bleiben? Dieser Artikel stellt die wichtigsten Neuerungen des Fork/Join-Framework aus Java 7 vor und vergleicht die Performance in zwei Anwendungsgebieten aus der Praxis.">
+
+
+  <meta name="keywords" content="Java, Parallel Computing">
+
+
+  <meta name="DC.identifier" content="https://www.heise.de/-1755690">
+
+
+
+    <meta property="og:title" content="Das Fork/Join-Framework in Java 7">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:url" content="https://www.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html">
+  <meta property="og:site_name" content="heise Developer">
+      <meta property="og:image" content="https://heise.cloudimg.io/bound/1920x1920/q90.png-lossy-90.webp-lossy-90.foil1/_www-heise-de_/developer/icons/developer_facebook_social_graph.png">
+      <meta property="og:description" content="Wann sollte man den neuen ForkJoinPool dem klassischen ThreadPoolExecutor vorziehen, und wann lässt man es besser bleiben? Dieser Artikel stellt die wichtigsten Neuerungen des Fork/Join-Framework aus Java 7 vor und vergleicht die Performance in zwei Anwendungsgebieten aus der Praxis.">
+
+  
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@heisedc">
+    <meta name="twitter:domain" content="heise.de">
+
+
+
+
+
+<link rel="home" type="text/html" title="Startseite" href="https://www.heise.de/developer/">
+<link rel="copyright" title="Copyright" href="https://www.heise.de/developer/impressum.html">
+<meta name="generator" content="InterRed V16.6, http://www.interred.de/, InterRed GmbH">
+
+<meta data-embetty-server="https://api.heise.de/svc/embetty">
+
+    
+
+
+
+<script async="" type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/288689636920174"></script><script type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/mobile-deflect.js"></script>
+
+<script async="" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/webcomponents.js"></script>
+
+
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+
+    <script type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/jquery-2.js"></script>
+<script type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/jquery_fieldselection.js"></script>
+
+    <script type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/bb-code-buttons.js"></script>
+
+
+<script type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/artikelGrossbild.js"></script>
+
+
+
+
+<script type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/iam.js"></script>
+
+
+<script type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/login.js"></script>
+
+    
+<link href="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/heise.css" rel="stylesheet" type="text/css">
+
+
+    <!--googleoff: all-->
+    <link href="https://www.heise.de/favicon_developer.ico" rel="shortcut icon">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.heise.de/developer/icons/apple-touch-icon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.heise.de/developer/icons/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.heise.de/developer/icons/apple-touch-icon-76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.heise.de/developer/icons/apple-touch-icon-152.png">
+    <meta name="application-name" content="Informationen für Entwickler">
+    <meta name="msapplication-tooltip" content="heise Developer">
+    <meta name="msapplication-starturl" content="http://www.heise.de/developer/">
+    <meta name="msapplication-TileColor" content="#AF2858">
+    <meta name="msapplication-square70x70logo" content="/developer/icons/windows_tiny.png">
+    <meta name="msapplication-square150x150logo" content="/developer/icons/windows_square.png">
+    <meta name="msapplication-wide310x150logo" content="/developer/icons/windows_wide.png">
+    <meta name="msapplication-square310x310logo" content="/developer/icons/windows_large.png">
+    <meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=http://www.heise.de/developer/rss/news-atom.xml&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=http://www.heise.de/developer/rss/news-atom.xml&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=http://www.heise.de/developer/rss/news-atom.xml&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=http://www.heise.de/developer/rss/news-atom.xml&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=http://www.heise.de/developer/rss/news-atom.xml&amp;id=5; cycle=1">
+
+    <link rel="author" title="Kontakt" href="http://www.heise.de/developer/kontakt/">
+    <link rel="search" title="Suche" href="http://www.heise.de/developer/suche/">
+    
+    
+        
+            <link rel="alternate" type="application/atom+xml" title="RSS-Feed heise Developer " href="http://www.heise.de/">
+        
+    
+    <link href="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/developer.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/event_calendar_teaser_ajax.js"></script>
+
+    
+
+<script src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/gpt.js"></script>
+<script type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/6643066444223159505108591208664246644666442"></script>
+
+<script type="text/javascript">
+    function ypGetInfo(yield_id, param) {
+        if (typeof yl === "undefined" || yl.YpResult === "undefined") {
+            return;
+        }
+        var yp_res = yl.YpResult.get(yield_id);
+        if (yp_res) {
+            if (param == "format") {
+                return yp_res.format;
+            }
+            else if (param == "pid") {
+                return yp_res.pid;
+            }
+            else {
+                return yp_res.pricerange;
+            }
+        }
+    }
+
+function shuffle(array) {
+  var idx = Math.floor(Math.random() * array.length);
+  return array[idx];
+}
+
+
+    googletag.defineSlot("/6514/www.heise.de/developer/dev-inhalt", [[468,60],[728,90],[800,250],[960,250],[970,250]], "div-gpt-ad-2")
+        .addService(googletag.pubads())
+                .setTargeting("pricerange_66430", ypGetInfo("66430"))
+                .setTargeting("pid_66430", ypGetInfo("66430", "pid"))
+                .setTargeting("pricerange_66444", ypGetInfo("66444"))
+                .setTargeting("pid_66444", ypGetInfo("66444", "pid"))
+                .setTargeting("pricerange_223159", ypGetInfo("223159"))
+                .setTargeting("pid_223159", ypGetInfo("223159", "pid"))
+                .setTargeting("pricerange_505108", ypGetInfo("505108"))
+                .setTargeting("pid_505108", ypGetInfo("505108", "pid"))
+                .setTargeting("pricerange_591208", ypGetInfo("591208"))
+                .setTargeting("pid_591208", ypGetInfo("591208", "pid"))
+                .setTargeting("yl_format", ypGetInfo("223159", "format"))
+            .setTargeting("pos", ["top"]);
+
+    googletag.defineSlot("/6514/www.heise.de/developer/dev-inhalt", [[120,600],[120,800],[160,600],[160,800],[200,800]], "div-gpt-ad-3")
+        .addService(googletag.pubads())
+                .setTargeting("pricerange_66424", ypGetInfo("66424"))
+                .setTargeting("pid_66424", ypGetInfo("66424", "pid"))
+                .setTargeting("pricerange_223159", ypGetInfo("223159"))
+                .setTargeting("pid_223159", ypGetInfo("223159", "pid"))
+                .setTargeting("yl_format", ypGetInfo("223159", "format"))
+            .setTargeting("pos", ["top"]);
+
+    googletag.defineSlot("/6514/www.heise.de/developer/dev-inhalt", [[300,250],[300,600],[336,280]], "div-gpt-ad-4")
+        .addService(googletag.pubads())
+                .setTargeting("pricerange_66446", ypGetInfo("66446"))
+                .setTargeting("pid_66446", ypGetInfo("66446", "pid"))
+                .setTargeting("pricerange_66442", ypGetInfo("66442"))
+                .setTargeting("pid_66442", ypGetInfo("66442", "pid"))
+            .setTargeting("pos", ["top"]);
+                    var gallery_adUnit = "/6514/www.heise.de/developer/dev-inhalt";
+
+    googletag.defineSlot("/6514/www.heise.de/developer/dev-inhalt", [[695,165],[695,200]], "div-gpt-ad-1")
+        .addService(googletag.pubads())
+            .setTargeting("pos", ["native"]);
+
+    googletag.defineSlot("/6514/www.heise.de/developer/dev-inhalt", [[500,500],[300,600],[300,250],[336,280],[695,110]], "div-gpt-ad-5")
+        .addService(googletag.pubads())
+            .setTargeting("pos", ["bottom"]);
+                    var gallery_adUnit = "/6514/www.heise.de/developer/dev-inhalt";
+
+googletag.pubads().setTargeting("kw", ["Java","Parallel Computing"]);
+googletag.pubads().setTargeting("themenhub", "yes");
+googletag.pubads().setTargeting(
+    "test", "test_" + shuffle(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"])
+);
+googletag.pubads().collapseEmptyDivs(true);
+googletag.pubads().enableSyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+</script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/colorbox.css"></head>
+  <body class="developer" id="pre-akwa" data-device="desktop">
+
+  <div class="heisetopnavi v14">
+  <div class="heisetopnavi_header">
+    <header role="banner">
+      <div class="heisetopnavi_login">
+        <div id="navi_login">
+          <p><span class="heise_foren">Heise-Foren:</span> <a href="https://www.heise.de/sso/login/?forward=https%3A%2F%2Fwww.heise.de%2Fdeveloper%2Fartikel%2FDas-Fork-Join-Framework-in-Java-7-1755690.html%3Fseite%3Dall">Einloggen</a> | <a href="https://www.heise.de/sso/registration?forward=https%3A%2F%2Fwww.heise.de%2Fdeveloper%2Fartikel%2FDas-Fork-Join-Framework-in-Java-7-1755690.html%3Fseite%3Dall">Registrieren</a></p>
+        </div>
+      </div>
+      <div class="heisetopnavi_hover_legacy">
+        <nav role="navigation">
+          <a href="https://www.heise.de/" class="heisetopnavi_logo akwa-heisetopnavi_logo" title="heise online">
+            <svg preserveAspectRatio="xMinYMin" xmlns="http://www.w3.org/2000/svg" viewBox="0 841.9 1057.3 200" class="akwa-topnavi-logo"><g fill="#888"><path d="M0 944c0-58.2 42.5-102.2 101.1-102.2 48.4 0 88.7 30.5 88.7 81.5 0 18.8-10 39.8-23.8 52.5l-7.2-6.2c9-10.7 14.5-26.4 14.5-40.3 0-41.9-32.7-69.1-73.2-69.1-54.3 0-73.2 42.9-73.2 90.8 0 42.4 31.2 77.3 74.2 77.3 22.7 0 42.7-6.9 61.3-19.5 3.4-2.4 6.9-5.3 9.8-8.4l4.1 6.2c-17.4 21.2-46.9 35.1-74.2 35.1C46.2 1042.1 0 1001.4 0 944"></path><path d="M114.6 906.3L82.2 980c-2.8 6.2-6.9 13.4-14.6 13.4-5.9 0-10.2-4.1-10.2-9.8 0-4.5 2.2-8.6 4-12.6l35.1-80c2.8-6 6-10.5 12.9-10.5 5.9 0 9.8 4.1 9.8 9.8 0 5.7-2.4 11-4.6 16zM140.2 951.3l-12.9 29.1c-2.9 6.2-7.1 13.1-14.8 13.1-5.9 0-9.8-4.1-9.8-9.8 0-4.3 2.1-8.4 4-12.4l15.7-35.3c2.8-5.9 6-10.5 12.9-10.5 5.9 0 9.8 4.1 9.8 9.8-.1 5.6-2.5 11-4.9 16z"></path><path d="M0 944c0-58.2 42.5-102.2 101.1-102.2 48.4 0 88.7 30.5 88.7 81.5 0 18.8-10 39.8-23.8 52.5l-7.2-6.2c9-10.7 14.5-26.4 14.5-40.3 0-41.9-32.7-69.1-73.2-69.1-54.3 0-73.2 42.9-73.2 90.8 0 42.4 31.2 77.3 74.2 77.3 22.7 0 42.7-6.9 61.3-19.5 3.4-2.4 6.9-5.3 9.8-8.4l4.1 6.2c-17.4 21.2-46.9 35.1-74.2 35.1C46.2 1042.1 0 1001.4 0 944"></path><path d="M114.6 906.3L82.2 980c-2.8 6.2-6.9 13.4-14.6 13.4-5.9 0-10.2-4.1-10.2-9.8 0-4.5 2.2-8.6 4-12.6l35.1-80c2.8-6 6-10.5 12.9-10.5 5.9 0 9.8 4.1 9.8 9.8 0 5.7-2.4 11-4.6 16zM140.2 951.3l-12.9 29.1c-2.9 6.2-7.1 13.1-14.8 13.1-5.9 0-9.8-4.1-9.8-9.8 0-4.3 2.1-8.4 4-12.4l15.7-35.3c2.8-5.9 6-10.5 12.9-10.5 5.9 0 9.8 4.1 9.8 9.8-.1 5.6-2.5 11-4.9 16z"></path></g><path fill="#888" d="M239.7 880.5h19.6v46h.2c2.3-3.6 5.7-6.8 9.7-8.8 4-2.3 8.4-3.4 13.3-3.4 13.1 0 26.9 8.6 26.9 33.4v45.4h-19.6v-43.3c0-11.3-4.1-19.6-14.9-19.6-7.5 0-12.9 5-15.1 11-.7 1.6-.7 3.6-.7 5.9v46.2h-19.6V880.7h.2v-.2zM344 959.9c.5 13.8 11.3 19.9 23.7 19.9 9.2 0 15.4-1.3 21.4-3.4l2.9 13.5c-6.6 2.7-16 5-26.9 5-25 0-39.7-15.4-39.7-39.2 0-21.4 12.9-41.5 37.7-41.5 25.1 0 33.2 20.7 33.2 37.5 0 3.6-.2 6.5-.7 8.3l-51.6-.1zm34-13.7c.2-7-3.1-18.9-16-18.9-12 0-17.1 11-18 18.9h34zm58-51.9c0 5.9-4.3 10.4-11.1 10.4-6.5 0-10.8-4.5-10.8-10.4s4.5-10.6 11-10.6c6.6 0 10.5 4.5 10.9 10.6zm-20.9 98.6v-77.1h19.6v77.1h-19.6zm43-17.7c4.5 2.7 12.8 5.6 19.8 5.6 8.6 0 12.2-3.4 12.2-8.6 0-5.2-3.2-7.9-12.8-11.3-15.1-5.2-21.4-13.5-21.2-22.5 0-13.7 11.3-24.2 29.1-24.2 8.6 0 16 2.3 20.5 4.5l-4 13.8c-3.4-1.8-9.5-4.5-16.3-4.5-7 0-10.8 3.4-10.8 8.1 0 5 3.6 7.4 13.5 10.8 13.8 5 20.5 12.2 20.7 23.7 0 13.8-11 24.2-31.4 24.2-9.3 0-17.8-2.3-23.4-5.6l4.1-14zm83.9-15.3c.5 13.8 11.3 19.9 23.7 19.9 9.2 0 15.4-1.3 21.4-3.4l2.9 13.5c-6.6 2.7-16 5-26.9 5-25.1-.2-39.9-15.6-39.9-39.2 0-21.4 12.9-41.5 37.7-41.5 25.1 0 33.2 20.7 33.2 37.5 0 3.6-.2 6.5-.7 8.3l-51.4-.1zm33.9-13.7c.2-7-3.1-18.9-16-18.9-12 0-17.1 11-18 18.9h34zm140.1 7.6c0 28.4-19.9 41-39.5 41-21.9-.2-38.6-15.1-38.6-39.9 0-25.3 16.7-41 39.9-41 22.8.2 38.2 16.4 38.2 39.9zm-58.2.7c0 14.9 7.4 26 19.2 26 11.1 0 18.9-11 18.9-26.4 0-12-5.4-25.9-18.7-25.9-13.8.3-19.4 13.5-19.4 26.3zm74.2-15.6c0-8.8-.2-16.3-.7-23h17.1l.9 11.5h.5c3.4-5.9 11.7-13.3 24.6-13.3 13.5 0 27.5 8.6 27.5 33.2v45.8h-19.6v-43.6c0-11.1-4.1-19.6-14.7-19.6-7.7 0-13.1 5.6-15.3 11.3-.7 1.8-.7 4.1-.7 6.3v45.3H732v-53.9zm90.5-58.4h19.6v112.6h-19.6V880.5zm61.6 13.8c0 5.9-4.3 10.4-11.1 10.4-6.5 0-10.8-4.5-10.8-10.4s4.5-10.6 11-10.6c6.6 0 10.8 4.5 10.9 10.6zm-20.8 98.6v-77.1h19.6v77.1h-19.6zm40.6-54c0-8.8-.2-16.3-.7-23h17.1l.9 11.5h.5c3.4-5.9 11.7-13.3 24.6-13.3 13.5 0 27.5 8.6 27.5 33.2v45.8h-19.6v-43.6c0-11.1-4.1-19.6-14.7-19.6-7.7 0-13.1 5.6-15.3 11.3-.7 1.8-.7 4.1-.7 6.3v45.3h-19.6v-53.9zm101.1 21c.5 13.8 11.3 19.9 23.7 19.9 9.2 0 15.4-1.3 21.4-3.4l2.9 13.5c-6.6 2.7-16 5-26.9 5-25 0-39.7-15.4-39.7-39.2 0-21.4 12.9-41.5 37.7-41.5 25.1 0 33.2 20.7 33.2 37.5 0 3.6-.2 6.5-.7 8.3l-51.6-.1zm34-13.7c.2-7-3.1-18.9-16-18.9-12 0-17.1 11-18 18.9h34z"></path></svg>
+          </a>
+          <a href="#heisetopnavi_sub_container" class="heisetopnavi_button" aria-haspopup="true"></a>
+          <div id="heisetopnavi_sub_container">
+            <ul id="heisetopnavi_sub">
+              <li class="new_list one">
+                <ul>
+                  <li class="heisetopnavi_ho"><a href="https://www.heise.de/" title="heise online – IT-News" name="dachzeile.ho.ho">News</a></li>
+                  <li class="heisetopnavi_dev"><a href="https://www.heise.de/developer/" title="heise Developer – Informationen für Entwickler" name="dachzeile.ho.developer">heise Developer</a></li>
+                  <li class="heisetopnavi_net"><a href="https://www.heise.de/thema/Netze" title="Themenseite Netze" name="dachzeile.ho.netze">heise Netze</a></li>
+                  <li class="heisetopnavi_op"><a href="https://www.heise.de/thema/Linux-und-Open-Source" title="Themenseite Linux und Open Source" name="dachzeile.ho.open">heise Open Source</a></li>
+                  <li class="heisetopnavi_sec"><a href="https://www.heise.de/security/" title="heise Security – News, Dienste und Foren zum Thema Computer-Sicherheit" name="dachzeile.ho.security">heise Security</a></li>
+                </ul>
+              </li>
+              <li class="new_list two">
+                <ul>
+                  <li class="heisetopnavi_ct"><a href="https://www.heise.de/ct/" title="c't – Magazin für Computertechnik" name="dachzeile.ho.ct">c't</a></li>
+                  <li class="heisetopnavi_ix"><a href="https://www.heise.de/ix/" title="iX – Magazin für professionelle Informationstechnik" name="dachzeile.ho.ix">iX</a></li>
+                  <li class="heisetopnavi_tr"><a href="https://www.heise.de/tr/" title="Technology Review – Das M.I.T.-Magazin für Innovation" name="dachzeile.ho.tr">Technology Review</a></li>
+                  <li class="heisetopnavi_df"><a href="https://www.heise.de/foto/" title="c't Fotografie" name="dachzeile.ho.ct-fotografie">c't Fotografie</a></li>
+                  <li class="heisetopnavi_mac"><a href="https://www.heise.de/mac-and-i/" title="Mac &amp; i – Nachrichten, Tests, Tipps und Meinungen rund um Apple" name="dachzeile.ho.mac-and-i">Mac &amp; i</a></li>
+                  <li class="heisetopnavi_hh"><a href="https://www.heise.de/make/" title="Make – Kreativ mit Technik" name="dachzeile.ho.make">Make</a></li>
+                </ul>
+              </li>
+              <li class="new_list three">
+                <ul>
+                  <li class="heisetopnavi_tp"><a href="https://www.heise.de/tp/" title="Telepolis" name="dachzeile.ho.tp">Telepolis</a></li>
+                  <li class="heisetopnavi_aut"><a href="https://www.heise.de/autos/" title="heise Autos – News, Tests, Technik, Service rund ums Auto" name="dachzeile.ho.autos">heise Autos</a></li>
+                  <li class="heisetopnavi_tech"><a href="https://www.techstage.de/" title="TechStage – News, Tests &amp; Praxis zu Smartphones und Tablets mit Android, iOS, Windows Phone &amp; Co." name="dachzeile.ho.techstage">TechStage</a></li>
+                  <li class="heisetopnavi_tipps-tricks"><a href="https://www.heise.de/tipps-tricks/" title="tipps+tricks" name="dachzeile.ho.tipps-tricks">tipps+tricks</a></li>
+                </ul>
+              </li>
+              <li class="new_list four">
+                <ul>
+                  <li class="heisetopnavi_swv"><a href="https://www.heise.de/download/" title="heise Download – Software zum Download fuer Windows, Mac, Linux, iPhone, Symbian, Android" name="dachzeile.ho.download">heise Download</a></li>
+                  <li class="heisetopnavi_pvg"><a href="https://www.heise.de/preisvergleich/" title="Preisvergleich – Günstige Preise, Meinungen und Bewertungen zu vielen Produkten" name="dachzeile.ho.preisvergleich">Preisvergleich</a></li>
+                  <li class="heisetopnavi_hbs"><a href="https://business-services.heise.de/" title="heise Business Services – Produkte und Lösungen namhafter IT-Hersteller" name="dachzeile.ho.whitepapers">Whitepapers</a></li>
+                  <li class="heisetopnavi_hbs"><a href="https://business-services.heise.de/" title="heise Business Services – Produkte und Lösungen namhafter IT-Hersteller" name="dachzeile.ho.webcasts">Webcasts</a></li>
+                  <li class="heisetopnavi_job"><a href="https://www.heise.de/jobs/" title="heise jobs – Jobbörse für qualifizierte Fach- und Führungskräfte aus der IT-Branche" name="dachzeile.ho.jobs">Stellenmarkt</a></li>
+                  <li class="heisetopnavi_knw"><a href="https://karriere-netzwerk.heise.de/" title="heise Karriere-Netzwerk" name="dachzeile.ho.karrierenetzwerk">Karriere Netzwerk</a></li>
+                  <li class="heisetopnavi_gutscheine"><a href="https://gutscheine.heise.de/" title="heise Gutscheine – Online-Gutscheine helfen dir schnell und einfach Geld zu sparen" name="dachzeile.ho.gutscheine">Gutscheine</a></li>
+                  <li class="heisetopnavi_itm"><a href="https://www.heise.de/itmarkt/" title="IT-Markt – Branchenverzeichnis der IT-Fachhändler" name="dachzeile.ho.itmarkt">IT-Markt</a></li>
+                  <li class="heisetopnavi_tarifr"><a href="https://www.heise.de/tarifrechner/" title="Tarifrechner – DSL, Mobiles Internet, Handy, Telefon, Strom, Gas" name="dachzeile.ho.tarifrechner">Tarifrechner</a></li>
+                  <li class="heisetopnavi_tools"><a href="https://www.heise.de/tools/" title="Netzwerk-Tools" name="dachzeile.ho.tools">Netzwerk-Tools</a></li>
+                  <li class="heisetopnavi_spiele"><a href="https://spiele.heise.de/" title="Spielen bei Heise" name="dachzeile.ho.spiele">Spielen bei Heise</a></li>
+                </ul>
+              </li>
+              <li class="new_list five">
+                <ul>
+                  <li class="heisetopnavi_shop"><a href="https://shop.heise.de/" title="heise shop – IT Fachzeitschriften, Bücher, CD/DVD/Blu-ray" name="dachzeile.ho.shop">heise shop</a></li>
+                  <li class="heisetopnavi_select"><a href="https://www.heise.de/select/" title="Heise Select" name="dachzeile.ho.select">heise Select</a></li>
+                  <li class="heisetopnavi_kio"><a href="https://shop.heise.de/artikel-archiv/" title="Artikel-Archiv – c't, iX, Technology Review, c't Fotografie, Mac &amp; i, Make, Sonderhefte" name="dachzeile.ho.artikel-archiv">Artikel-Archiv</a></li>
+                  <li class="heisetopnavi_abo"><a href="https://shop.heise.de/abo" title="Abo – c't, iX, Technology Review, c't Fotografie, Mac &amp; i" name="dachzeile.ho.abo">Zeitschriften-Abo</a></li>
+                  <li class="heisetopnavi_eve"><a href="https://www.heise.de/events/" title="heise Events – Konferenzen, Seminare, Workshops" name="dachzeile.ho.events">Veranstaltungen</a></li>
+                  <li class="heisetopnavi_hmg"><a href="https://heise-gruppe.de/-1812545" title="Arbeiten bei heise – Heise als Arbeitgeber" name="dachzeile.ho.hmg">Arbeiten bei Heise</a></li>
+                  <li class="heisetopnavi_media"><a href="https://www.heise.de/mediadaten/" title="Mediadaten Heise Medien" name="dachzeile.ho.mediadaten">Mediadaten</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <form accept-charset="utf-8" method="get" action="/developer/suche/" id="heisetopnavi_search" role="search">
+        <fieldset>
+          <input class="search_text" name="q" placeholder="in heise Developer suchen" data-autocomplete="true" data-searchpath="/developer/suche/" type="search"><input src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/heise_online_lupe.gif" alt="Los" class="search_submit" name="search_submit" type="image">
+          <input class="search_hidden" value="search" name="rm" type="hidden">
+          <input name="sort_by" value="date" type="hidden">
+        </fieldset>
+      </form>
+    </header>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<script type="text/javascript">
+if (typeof jQuery !== "undefined") {
+    jQuery(document).ready(function($) {
+        // Support Touch-Devices
+        $('.heisetopnavi_button').bind('touchstart', function(e) {
+            e.preventDefault();
+            if ($(e.target).is('a.heisetopnavi_button')) {
+                $(this).toggleClass('active');
+                $('.heisetopnavi header > nav').toggleClass('hover');
+            }
+        });
+
+        $('.heisetopnavi .heisetopnavi_button').click(function(e) {
+            e.preventDefault();
+        });
+
+        // Support Keyboard
+        $('.heisetopnavi .heisetopnavi_button').keyup(function(e) {
+            if (e.which == 13 && $(e.target).is('a.heisetopnavi_button')) {
+                $('.heisetopnavi .heisetopnavi_button').toggleClass('active');
+                $('.heisetopnavi header > nav').toggleClass('hover');
+            }
+        });
+
+        /*
+         * Open/Close Menu with JavaScript for more Usability
+         */
+
+        $('.heisetopnavi').removeClass('no-touch');
+
+        // Logo + Icon
+        $('.heisetopnavi .heisetopnavi_hover_legacy').mouseenter(function() {
+            var timeout_id = window.setTimeout(function() {
+                $('.heisetopnavi .heisetopnavi_button').addClass('active');
+                $('.heisetopnavi nav').addClass('hover');
+                $('body').addClass('refreshDOM');
+                $('body').removeClass('refreshDOM');
+            }, 300);
+            $(this).data('timeout_id', timeout_id);
+        });
+        $('.heisetopnavi .heisetopnavi_hover_legacy').mouseleave(function() {
+            var timeout_id = $(this).data('timeout_id');
+            window.clearTimeout(timeout_id);
+            timeout_id = window.setTimeout(function() {
+                $('.heisetopnavi .heisetopnavi_button').removeClass('active');
+                $('.heisetopnavi nav').removeClass('hover');
+                $('body').addClass('refreshDOM');
+                $('body').removeClass('refreshDOM');
+            }, 0);
+            $(this).data('timeout_id', timeout_id);
+        });
+    });
+
+    if (typeof heiseLogin != "undefined") {
+        heiseLogin.login_fill_navigation({});
+    }
+}
+</script>
+
+
+              
+        
+    
+
+
+
+
+
+  
+
+  <div id="container">
+    
+
+
+  <div class="ad-container">
+      <div class="ad-container__leaderboard">  <div id="div-gpt-ad-2">
+    
+    <script type="text/javascript">
+      googletag.display("div-gpt-ad-2");
+    </script>
+    <noscript><div><a href="//pubads.g.doubleclick.net/gampad/jump?iu=%2F6514%2Fwww.heise.de%2Fdeveloper%2Fdev-inhalt%2F&kw=Java%2CParallel%2520Computing&c=5890348134&sz=468x60%7C728x90%7C800x250%7C960x250%7C970x250&tile=2" target="_blank"><img alt="" src="//pubads.g.doubleclick.net/gampad/ad?iu=%2F6514%2Fwww.heise.de%2Fdeveloper%2Fdev-inhalt%2F&kw=Java%2CParallel%2520Computing&c=5890348134&sz=468x60%7C728x90%7C800x250%7C960x250%7C970x250&tile=2" /></a></div></noscript>
+  </div>
+</div>
+
+
+    <div class="ad-container__skyscraper ad-container__skyscraper--right">  <div id="div-gpt-ad-3">
+    
+    <script type="text/javascript">
+      googletag.display("div-gpt-ad-3");
+    </script>
+    <noscript><div><a href="//pubads.g.doubleclick.net/gampad/jump?iu=%2F6514%2Fwww.heise.de%2Fdeveloper%2Fdev-inhalt%2F&kw=Java%2CParallel%2520Computing&c=5890348134&sz=120x600%7C120x800%7C160x600%7C160x800%7C200x800&tile=3" target="_blank"><img alt="" src="//pubads.g.doubleclick.net/gampad/ad?iu=%2F6514%2Fwww.heise.de%2Fdeveloper%2Fdev-inhalt%2F&kw=Java%2CParallel%2520Computing&c=5890348134&sz=120x600%7C120x800%7C160x600%7C160x800%7C200x800&tile=3" /></a></div></noscript>
+  </div>
+</div>
+  </div>
+
+    <div id="container_content">
+      <div class="main-header">
+        <div class="logo_bereich">
+            <div class="logo">
+              <a href="https://www.heise.de/developer/" title="heise Developer">
+                <svg preserveAspectRatio="xMinYMin" xmlns="http://www.w3.org/2000/svg" width="280" height="40" viewBox="0 0 595 86"><path data-name="developer" d="M228.8 64v-3.8h6V21.3h-6v-3.7h23.8c8.3 0 14.7 2 19.1 6s6.6 9.7 6.6 17.2-2.2 13.2-6.6 17.2-10.8 6-19.1 6h-23.8zm17.9-3.7h4.3c4.8 0 8.4-1.6 10.6-4.7s3.3-8 3.3-14.8-1.1-11.7-3.3-14.7-5.8-4.6-10.6-4.6h-4.3v38.7zM319.8 49h-22.7v.2c0 4.2.7 7.4 1.9 9.2s3.3 2.8 6.3 2.8a8.6 8.6 0 0 0 5.8-1.9 9.1 9.1 0 0 0 2.8-5.5h5.1a13.3 13.3 0 0 1-5.3 8.3c-2.7 1.8-6.3 2.7-11.2 2.7s-10.1-1.5-13.2-4.5-4.6-7.3-4.6-12.9 1.6-9.7 4.7-12.8 7.5-4.6 13-4.6 9.7 1.6 12.6 4.8 4.7 8 4.8 14.2zm-12.1-3.6c0-4.3-.4-7.4-1.2-9.2a4.2 4.2 0 0 0-4.2-2.6 4.3 4.3 0 0 0-4.1 2.6c-.8 1.7-1.2 4.6-1.2 8.6v.6h10.6zM338.2 64l-11.7-29.3h-3.6v-3.8h19v3.8h-4l8.3 20.8 8.3-20.8h-4.3v-3.8h12.4v3.8h-3.8L347.1 64h-8.9zm61.7-15h-22.7v.2c0 4.2.7 7.4 1.9 9.2s3.3 2.8 6.3 2.8a8.6 8.6 0 0 0 5.8-1.9 9.1 9.1 0 0 0 2.8-5.5h5.1a13.3 13.3 0 0 1-5.3 8.3c-2.7 1.8-6.3 2.7-11.2 2.7s-10.1-1.5-13.2-4.5-4.6-7.3-4.6-12.9 1.6-9.7 4.7-12.8 7.5-4.6 13-4.6 9.7 1.6 12.6 4.8 4.6 8 4.8 14.2zm-12.1-3.6c0-4.3-.4-7.4-1.2-9.2a4.2 4.2 0 0 0-4.2-2.6 4.3 4.3 0 0 0-4.1 2.6c-.8 1.7-1.2 4.6-1.2 8.6v.6h10.6zm34.1 14.9h4.7V64h-20.4v-3.8h4.7V19.3h-4.7v-3.7h15.7v44.6zm28.9 4.6c-5.8 0-10.4-1.6-13.7-4.6s-5-7.4-5-12.8 1.6-9.7 5-12.8S445 30 450.8 30s10.4 1.6 13.7 4.6 4.9 7.4 4.9 12.8-1.6 9.7-5 12.8-7.8 4.7-13.6 4.7zm0-3.5a5 5 0 0 0 4.9-3c1-2 1.4-5.7 1.4-10.9s-.4-8.9-1.4-10.9a5 5 0 0 0-4.9-3 4.9 4.9 0 0 0-4.9 3c-1 2-1.4 5.7-1.4 10.9s.4 8.9 1.4 10.9a4.8 4.8 0 0 0 4.9 3zm28.6-26.6h-4.7v-3.9h15.7v4.2a9.5 9.5 0 0 1 3.8-3.9 12.5 12.5 0 0 1 5.9-1.3c4.7 0 8.4 1.6 11.1 4.6s4.1 7.4 4.1 12.7-1.3 9.8-4.1 12.9-6.4 4.7-11.1 4.7a12.9 12.9 0 0 1-5.9-1.3 8.7 8.7 0 0 1-3.8-3.9v13.7h5.1v3.8h-20.7v-3.8h4.7V34.7zm11 11.1v3.3c0 3.9.5 6.6 1.5 8.3a5.1 5.1 0 0 0 4.8 2.6 4.8 4.8 0 0 0 4.8-2.8c.9-1.8 1.4-5.1 1.4-9.8s-.4-8-1.4-9.8a5 5 0 0 0-4.8-2.8 5 5 0 0 0-4.8 2.6c-1 1.7-1.4 4.5-1.4 8.3zm66.3 3.1H534v.2c0 4.2.7 7.4 1.9 9.2s3.3 2.8 6.3 2.8a8.6 8.6 0 0 0 5.8-1.9 9.1 9.1 0 0 0 2.8-5.5h5.1a13.3 13.3 0 0 1-5.3 8.3c-2.7 1.8-6.3 2.7-11.2 2.7s-10.1-1.5-13.2-4.5-4.6-7.3-4.6-12.9 1.6-9.7 4.7-12.8 7.5-4.6 13-4.6 9.7 1.6 12.6 4.8 4.6 8 4.8 14.2zm-12.1-3.6c0-4.3-.4-7.4-1.2-9.2a4.2 4.2 0 0 0-4.2-2.6 4.3 4.3 0 0 0-4.1 2.6c-.8 1.7-1.2 4.6-1.2 8.6v.6h10.6zM595 30.6v9.8h-3.5a6.4 6.4 0 0 0-1.4-3.9 4.6 4.6 0 0 0-3.6-1.3 6.3 6.3 0 0 0-5.7 3.2c-1.4 2.1-2.1 5.1-2.1 8.8v13h6V64H563v-3.8h4.7V34.7h-5.1v-3.8h16.1v5.9a11.8 11.8 0 0 1 4.2-5.1 12.1 12.1 0 0 1 6.5-1.6h2.4z" fill="#661136"></path><path d="M100.9 27.9h4.4v15.4h.1a8.6 8.6 0 0 1 3.2-3.1 9.5 9.5 0 0 1 4.6-1.3c3.3 0 8.6 2 8.6 10.5V64h-4.4V49.9c0-3.9-1.5-7.3-5.7-7.3a6.4 6.4 0 0 0-6 4.4 6 6 0 0 0-.3 2.1V64H101V27.9zm30.7 24.6c.1 6 3.9 8.5 8.4 8.5a17.1 17.1 0 0 0 6.8-1.3l.7 3.2a19 19 0 0 1-8.1 1.6c-7.6 0-12.1-5-12.1-12.4s4.4-13.3 11.5-13.3 10.1 7 10.1 11.6a13.3 13.3 0 0 1-.1 2.1h-17.2zm13-3.3c.1-2.8-1.2-7.3-6.2-7.3s-6.5 4.1-6.8 7.3h13zm14.8-16.7a2.6 2.6 0 0 1-2.8 2.7 2.6 2.6 0 0 1-2.7-2.7 2.8 2.8 0 0 1 2.8-2.8 2.6 2.6 0 0 1 2.7 2.8zm-5 31.4V39.4h4.4v24.5h-4.4zm11.3-4.5a11.4 11.4 0 0 0 5.9 1.8c3.3 0 4.7-1.6 4.7-3.6s-1.3-3.3-4.6-4.5-6.5-4-6.5-7 3.2-7.2 8.4-7.2a11.8 11.8 0 0 1 6 1.6l-1.1 3.3a9.7 9.7 0 0 0-5-1.4c-2.7 0-4.1 1.6-4.1 3.3s1.5 3 4.7 4.1 6.4 3.8 6.4 7.4-3.3 7.4-9.2 7.4a14.5 14.5 0 0 1-6.9-1.7zm23.2-6.9c.1 6 3.9 8.5 8.4 8.5a17.1 17.1 0 0 0 6.8-1.3l.7 3.2a19 19 0 0 1-8.1 1.6c-7.6 0-12.1-5-12.1-12.4s4.4-13.3 11.5-13.3 10.1 7 10.1 11.6a13.3 13.3 0 0 1-.1 2.1h-17.2zm13-3.3c.1-2.8-1.2-7.3-6.2-7.3s-6.5 4.1-6.8 7.3h13zM71.4 57.6L68.3 55a28.3 28.3 0 0 0 6.2-17.3C74.5 19.7 60.4 8 43 8 19.7 8 11.5 26.4 11.5 47c0 18.2 13.4 33.3 31.9 33.3a45.9 45.9 0 0 0 26.4-8.4 28 28 0 0 0 4.2-3.6l1.8 2.7a43.2 43.2 0 0 1-31.9 15C19.9 86.1 0 68.6 0 43.9S18.3 0 43.5 0c20.8 0 38.1 13.1 38.1 35 0 8.1-4.3 17.1-10.2 22.6zM49.3 27.7l-14 31.7c-1.2 2.7-3 5.8-6.3 5.8a4.2 4.2 0 0 1-4.3-4.2c0-1.9 1-3.7 1.7-5.4l15.1-34.5c1.2-2.6 2.6-4.5 5.6-4.5a4 4 0 0 1 4.2 4.2c0 2.5-1.1 4.8-2 6.9zm11 19.3l-5.6 12.6c-1.3 2.7-3 5.6-6.4 5.6a4 4 0 0 1-4.2-4.2 12.9 12.9 0 0 1 1.7-5.3l6.7-15.2c1.2-2.5 2.6-4.5 5.6-4.5a4 4 0 0 1 4.2 4.2 16.2 16.2 0 0 1-2 6.8z" fill="#888"></path></svg>
+              </a>
+            </div>
+            
+            <nav class="dev-nav-socialmedia">
+              <a href="https://www.heise.de/forum/heise-Developer/Themen-Hilfe/forum-36206/" title="heise Developer Foren" class="dev-nav-socialmedia__foren">Foren</a>
+              <a href="https://www.heise.de/developer/kontakt/" title="Kontakt zur Redaktion" class="dev-nav-socialmedia__kontakt">Kontakt</a>
+              <a href="http://twitter.com/#!/heisedc" title="heise Developer auf Twitter folgen" target="_blank" class="dev-nav-socialmedia__twitter dev-socialmedia">
+                <svg height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin"><path fill="#fff" d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5T1369.5 1125 1185 1335.5t-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5T285 1033q33 5 61 5 43 0 85-11-112-23-185.5-111.5T172 710v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5T884 653q-8-38-8-74 0-134 94.5-228.5T1199 256q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path></svg>
+              </a>
+              <a href="https://www.heise.de/newsletter/manage/developer" title="heise Developer Newsletter" class="dev-nav-socialmedia__newsletter dev-socialmedia">
+                <svg preserveAspectRatio="xMinYMin" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47H160q-66 0-113-47T0 1504V710q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38T639 1015q-91-64-262-182.5T172 690q-62-42-117-115.5T0 438q0-78 41.5-130T160 256h1472q65 0 112.5 47t47.5 113z" fill="#fff"></path></svg>
+              </a>
+              <a href="https://www.heise.de/developer/rss/news-atom.xml" title="heise Developer RSS-Feed abonnieren" target="_blank" class="dev-nav-socialmedia__rss dev-socialmedia">
+                <svg preserveAspectRatio="xMinYMin" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M576 1344q0 80-56 136t-136 56-136-56-56-136 56-136 136-56 136 56 56 136zm512 123q2 28-17 48-18 21-47 21H889q-25 0-43-16.5t-20-41.5q-22-229-184.5-391.5T250 902q-25-2-41.5-20T192 839V704q0-29 21-47 17-17 43-17h5q160 13 306 80.5T826 902q114 113 181.5 259t80.5 306zm512 2q2 27-18 47-18 20-46 20h-143q-26 0-44.5-17.5T1329 1476q-12-215-101-408.5t-231.5-336-336-231.5T252 398q-25-1-42.5-19.5T192 335V192q0-28 20-46 18-18 44-18h3q262 13 501.5 120T1186 542q187 186 294 425.5t120 501.5z" fill="#fff"></path></svg>
+              </a>
+            </nav>
+          </div>
+          <nav id="main_navigation" class="touch_detect">
+            <ul class="clearfix">
+                
+                <li>
+                  <a href="https://www.heise.de/developer/" title="News" class="dropdown">News</a>
+                    <ul class="subnavigation">
+                        <li>
+                          <a href="https://www.heise.de/developer/news/" title="7-Tage-News">7-Tage-News</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/news/archiv/" title="News-Archiv">News-Archiv</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="aktiv">
+                  <a href="https://www.heise.de/developer/rubriken/" title="Rubriken" class="dropdown">Rubriken</a>
+                    <ul class="subnavigation">
+                        <li>
+                          <a href="https://www.heise.de/developer/sprachen-1037.html" title="Sprachen">Sprachen</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/architektur-methoden-1031.html" title="Architektur/Methoden">Architektur/Methoden</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/werkzeuge-1041.html" title="Werkzeuge">Werkzeuge</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/know-how-1033.html" title="Know-how">Know-how</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/standards-1039.html" title="Standards">Standards</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/literatur-1035.html" title="Literatur">Literatur</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/videos-3294461.html" title="Videos">Videos</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/Veranstaltungsberichte-3344266.html" title="Veranstaltungsberichte">Veranstaltungsberichte</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                  <a href="https://www.heise.de/developer/blog/" title="Blogs" class="dropdown">Blogs</a>
+                    <ul class="subnavigation">
+                        <li>
+                          <a href="https://www.heise.de/developer/babel-bulletin-980714.html" title="Babel-Bulletin">Babel-Bulletin</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/der-dotnet-doktor-1292.html" title="Der Dotnet-Doktor">Der Dotnet-Doktor</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/the-next-big-thing-1790061.html" title="the next big thing">the next big thing</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/neuigkeiten-von-der-insel-1920360.html" title="Neuigkeiten von der Insel">Neuigkeiten von der Insel</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/Tales_from_the_Web_side-2548664.html" title="Tales from the Web side">Tales from the Web side</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/Continuous-Architecture-2687847.html" title="Continuous Architecture">Continuous Architecture</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/Der_Pragmatische_Architekt-2732748.html" title="Der Pragmatische Architekt">Der Pragmatische Architekt</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/UeberKreuz-2753600.html" title="ÜberKreuz ">ÜberKreuz </a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/ModernesCplusplus-3691794.html" title="Modernes C++">Modernes C++</a>
+                        </li>
+                        <li>
+                          <a href="https://www.heise.de/developer/colspan-3971774.html" title="colspan">colspan</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                  <a href="https://www.heise.de/developer/podcast/" title="Podcast">Podcast</a>
+                </li>
+                
+                <li>
+                  <a href="https://www.heise.de/developer/videos-3294461.html" title="Videos">Videos</a>
+                </li>
+                
+                
+                <li>
+                  <a href="https://www.heise.de/developer/Konferenzen-von-heise-Developer-2725968.html" title="Konferenzen">Konferenzen</a>
+                </li>
+                
+                <li>
+                  <a href="https://www.heise.de/developer/termine/" title="Termine">Termine</a>
+                </li>
+                
+                
+                
+            </ul>
+          </nav>
+        </div>
+
+    <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="https://www.heise.de/developer/" title="heise Developer">
+                    <span itemprop="name">heise Developer</span>
+                </a>
+                <meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="https://www.heise.de/developer/rubriken/" title="Rubriken">
+                    <span itemprop="name">Rubriken</span>
+                </a>
+                <meta itemprop="position" content="2">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="https://www.heise.de/developer/sprachen-1037.html" title="Sprachen">
+                    <span itemprop="name">Sprachen</span>
+                </a>
+                <meta itemprop="position" content="3">
+            </li>
+                    <li class="active">
+                        Das Fork/Join-Framework in Java 7
+                    </li>
+    </ol>
+
+
+        <div id="mitte">
+          <!--googleon: all-->
+          
+    
+<article class="akwa-article pre-akwa-article" itemscope="" itemtype="http://schema.org/CreativeWork">
+  
+
+
+  <!-- RSPEAK_START -->
+
+  
+<header class="article-header">
+
+  <div class="article-header-content">
+
+  
+  
+
+
+
+  
+    <h1 class="article__heading" itemprop="headline">
+  
+
+      Das Fork/Join-Framework in Java 7
+
+      
+
+      
+
+      </h1>
+    
+
+
+
+  <!-- RSPEAK_STOP -->
+
+    <div class="publish-info">
+        <span class="publish-info__rubrik">
+          Sprachen
+        </span>
+        <time class="publish-info__date" datetime="2012-11-23T14:39:00+01:00" itemprop="datePublished">23.11.2012&nbsp;14:39&nbsp;Uhr
+        </time>
+          <span class="publish-info__author" itemprop="author">
+              Patrick Peschlow
+          </span>
+
+        <a href="https://www.heise.de/forum/heise-Developer/Kommentare/Das-Fork-Join-Framework-in-Java-7/forum-35981/comment/" title="Meldung vorlesen und MP3-Download" class="kommentare-info">
+          &nbsp;–&nbsp;  <span itemprop="commentCount">1</span> Kommentare
+        </a>
+    </div>
+  </div>
+
+    
+
+
+</header>
+
+
+  <div class="article-content pre-akwa-article__content">
+
+    
+
+
+
+
+    <!--googleoff: index-->
+<!-- RSPEAK_STOP -->
+<div class="bcadv ISI_IGNORE bcadv_oben"><a href="http://www.heise.de/mediadaten/online/" target="_blank" class="hinweis_anzeige">Anzeige</a><br>  <div id="div-gpt-ad-4">
+    
+    <script type="text/javascript">
+      googletag.display("div-gpt-ad-4");
+    </script>
+    <noscript><div><a href="//pubads.g.doubleclick.net/gampad/jump?iu=%2F6514%2Fwww.heise.de%2Fdeveloper%2Fdev-inhalt%2F&kw=Java%2CParallel%2520Computing&c=5890348134&sz=300x250%7C300x600%7C336x280&tile=4" target="_blank"><img alt="" src="//pubads.g.doubleclick.net/gampad/ad?iu=%2F6514%2Fwww.heise.de%2Fdeveloper%2Fdev-inhalt%2F&kw=Java%2CParallel%2520Computing&c=5890348134&sz=300x250%7C300x600%7C336x280&tile=4" /></a></div></noscript>
+  </div>
+</div>
+<!-- RSPEAK_START -->
+<!--googleon: index-->
+
+    
+
+
+
+
+<!-- RSPEAK_STOP -->
+<figure class="rte__inlinebild akwa-inline-img rte__pos_left col-lg-6 col-md-6 col-sm-6 col-xs-12 akwa-inline--left" style="max-width:250px;">
+
+    
+  <img src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/aufmacher250-d5ab78732a8e394e.png" alt="Das Fork/Join-Framework in Java 7" class="akwa-article-teaser__image">
+
+</figure>
+<!-- RSPEAK_START -->
+<p><strong class="manuell_vorspann">Wann sollte man den neuen 
+ForkJoinPool dem klassischen ThreadPoolExecutor vorziehen, und wann 
+lässt man es besser bleiben? Dieser Artikel stellt die wichtigsten 
+Neuerungen des Fork/Join-Framework aus Java 7 vor und vergleicht die 
+Performance in zwei Anwendungsgebieten aus der Praxis.</strong></p>
+<p>Eine wesentliche Neuerung von Java 5 war der ExecutorService, eine 
+Abstraktion zur asynchronen Ausführung von Tasks. Der ThreadPoolExecutor
+ implementiert das Konzept mit einem intern verwalteten Thread Pool, 
+dessen Worker Threads die anfallenden Tasks abarbeiten. Der 
+ThreadPoolExecutor besitzt eine zentrale Eingangs-Queue für neue Tasks 
+(Runnables oder Callables), die alle Worker Threads gemeinsam nutzen.<br> </p>
+<p>Ein Nachteil des ThreadPoolExecutor ist, dass es beim Zugriff der 
+Threads auf die gemeinsame Eingangs-Queue zu Konkurrenzsituationen 
+kommen kann und durch den Synchronisations-Overhead wertvolle Zeit für 
+die Bearbeitung der Tasks verloren geht. Auch gibt es keine 
+Unterstützung für die Zusammenarbeit mehrerer Threads bei der Berechnung
+ von Tasks.  </p>
+<p>Seit Java 7 gibt es mit dem ForkJoinPool eine weitere Implementierung
+ des ExecutorService: Er verwendet zusätzliche Strukturen, um die 
+Nachteile des ThreadPoolExecutor zu kompensieren und gegebenenfalls eine
+ effizientere Bearbeitung von Tasks zu ermöglichen. Das zugrunde 
+liegende Konzept, das Fork/Join-Framework, wurde von Doug Lea bereits 
+2000 <a href="http://gee.cs.oswego.edu/dl/papers/fj.pdf" target="_blank" rel="external">vorgestellt</a> (PDF) und seitdem weiter verfeinert und verbessert.</p>
+<p>Wenn der ForkJoinPool in der Praxis zum Einsatz kommen soll, stellt 
+sich leider oft Verunsicherung ein. Das liegt zum einen daran, dass 
+viele Tutorials nur "Sandkastenbeispiele" verwenden. So entsteht schnell
+ der Eindruck, der ForkJoinPool wäre nur für gekünstelte Fragestellungen
+ oder ganz spezielle Anwendungen geeignet. Für Irritation sorgt 
+außerdem, wenn der ForkJoinPool in scheinbar vielversprechenden 
+Szenarien keinerlei Performancegewinn oder sogar eine Verschlechterung 
+gegenüber dem ThreadPoolExecutor aufweist.</p>
+<p>Dieser Artikel soll etwas Licht ins Dunkel bringen und anhand von 
+Anwendungen aus der "echten" Praxis ein besseres Verständnis dafür 
+schaffen, welche Szenarien sich für den ForkJoinPool eignen (und warum 
+das so ist).  </p>
+<h3 class="subheading" id="nav_arbeitsweise__1">Arbeitsweise und Struktur</h3><p>Genau
+ wie der ThreadPoolExecutor verwendet der ForkJoinPool eine zentrale 
+Eingangs-Queue und einen internen Thread Pool. Allerdings besitzt jeder 
+Worker Thread zusätzlich eine eigene Task Queue, in die er selbst neue 
+Tasks einplanen kann (siehe Abb. 1). So lange seine Task Queue noch 
+Tasks enthält, arbeitet der Thread ausschließlich diese Tasks ab. Ist 
+die eigene Queue leer, folgt der Thread einem Work-Stealing-Algorithmus:
+ Er sucht in den Task Queues anderer Worker Threads nach einem 
+verfügbaren Task und bearbeitet ihn. Sollte keiner zu finden sein, 
+greift er auf die zentrale Eingangs-Queue zu.</p>
+
+
+
+
+
+<!-- RSPEAK_STOP -->
+<figure class="rte__inlinebild akwa-inline-img col-lg-12 col-md-12 col-sm-12 col-xs-12" style="max-width:572px;">
+
+    
+  <img src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/abb1-453d23493b2313d3.png" alt="Ein ForkJoinPool mit zwei Worker Threads A und B. Neben der Eingangs-Queue existiert zusätzlich eine weitere interne Task Queue pro Thread. Jeder Thread arbeitet zunächst die eigene Queue ab, bevor er sich einer anderen zuwendet (Abb. 1)." class="akwa-article-teaser__image">
+    <figcaption class="rte__inlinebild_source akwa-caption"><span class="akwa-caption__text">
+          Ein ForkJoinPool mit zwei Worker Threads A und B. Neben der 
+Eingangs-Queue existiert zusätzlich eine weitere interne Task Queue pro 
+Thread. Jeder Thread arbeitet zunächst die eigene Queue ab, bevor er 
+sich einer anderen zuwendet (Abb. 1).
+        </span>
+    </figcaption>
+</figure>
+<!-- RSPEAK_START -->
+
+<p>Das Verfahren hat zwei potenzielle Vorteile: Erstens arbeitet jeder 
+Thread soweit möglich über einen längeren Zeitraum nur auf seiner 
+eigenen Queue, ohne mit den anderen Threads in Kontakt zu kommen. 
+Zweitens besteht für die Threads die Möglichkeit, sich gegenseitig 
+Arbeit abzunehmen.</p>
+<p>Um den Overhead durch die zusätzlichen Queues und das Work Stealing 
+zu minimieren, wurde die Implementierung des ForkJoinPool stark in Bezug
+ auf Performance verbessert. Zwei Aspekte sind hervorzuheben:</p>
+<ul class="rte__list rte__list--unordered"><li> Die Task Queues der 
+Worker Threads verwenden als Datenstruktur eine Deque (double-ended 
+queue), die effizientes Einfügen und Entfernen von Elementen an beiden 
+Enden unterstützt. Der Worker Thread selbst arbeitet nur an einem Ende 
+seiner Deque, analog zu einem Stack: Er legt neue Tasks auf die Spitze 
+des Stacks (push) und holt sich von dort Tasks zur Bearbeitung (pop). 
+Die anderen Threads hingegen greifen beim Work Stealing stets auf das 
+andere Ende der Deque zu. Es kommt also beim Work Stealing in der Regel 
+nur zu Konkurrenzsituationen zwischen Threads, die sich gleichzeitig aus
+ derselben Task Queue bedienen möchten -- der "Eigentümer" der Queue ist
+ nur selten involviert. </li><li>Findet ein Thread beim Work Stealing 
+keine verfügbaren Tasks, besteht die Gefahr, dass er fortwährend 
+dieselben leeren Queues abklappert und so CPU-Zeit verbrennt. Um das zu 
+vermeiden, gehen "arbeitslose" Worker Threads nach bestimmten Regeln in 
+einen Ruhezustand über. Das Framework spricht sie gezielt an, sobald 
+wieder Tasks verfügbar sind.</li></ul>
+<h3 class="subheading" id="nav_fork_und_join__2">Fork und Join </h3><p>Eine
+ wichtige Beobachtung ist, dass die lokalen Task Queues und das Work 
+Stealing nur zum Einsatz kommen (und daher auch nur dann einen Vorteil 
+bringen), wenn die Worker Threads tatsächlich neue Tasks in die eigene 
+Queue einplanen. Geschieht das nicht, reduziert sich das Verhalten des 
+ForkJoinPool auf das eines ThreadPoolExecutor mit sinnlosem Overhead.  </p>
+<p>Der ForkJoinPool bietet daher eine explizite Schnittstelle an, mit 
+der Tasks im Rahmen ihrer Ausführung neue Tasks einplanen können. Statt 
+auf Runnables oder Callables arbeitet der ForkJoinPool auf sogenannten 
+ForkJoinTasks. Ein ForkJoinTask besitzt während seiner Ausführung einen 
+Kontext, innerhalb dessen neu erzeugte ForkJoinTasks automatisch in die 
+lokale Task Queue eingeplant werden (fork). Benötigt der ursprüngliche 
+Task die Ergebnisse der abgezweigten Tasks, kann er auf diese warten und
+ sie zu einem Gesamtergebnis zusammenführen (join). Um die Anwendung von
+ Fork und Join zu vereinfachen, gibt es zwei konkrete Implementierungen 
+der ForkJoinTask: Der RecursiveTask liefert ein Ergebnis zurück, die 
+RecursiveAction nicht.</p>
+<h3 class="subheading" id="nav_geeignete__3">Geeignete Szenarien für den ForkJoinPool</h3><p>Ein
+ Szenario, bei dem Tasks weitere Tasks einplanen, beruht auf dem Prinzip
+ der Zerlegung: Ist der Berechnungsaufwand für einen Task sehr groß, 
+lässt er sich rekursiv in viele kleine Subtasks zerlegen. Durch das Work
+ Stealing beteiligen sich andere Threads ebenfalls an der Berechnung 
+(und zerlegen ihre Subtasks wenn möglich erneut). Nur wenn ein Subtask 
+nach bestimmten Kriterien klein genug ist und sich eine weitere 
+Zerlegung nicht lohnt, wird er direkt berechnet. Besonders verlockend an
+ dem Ansatz ist, dass zu Beginn einer rekursiven Zerlegung recht große 
+Subtasks entstehen, die andere Threads dann unmittelbar stehlen können. 
+Das begünstigt eine gleichmäßige Lastverteilung zwischen den Threads.</p>
+<p>In einem anderen, gerne unterschätzten Szenario planen Tasks auch 
+ohne Zerlegung weitere Tasks ein. Ein Task stellt dann zwar eine in sich
+ abgeschlossene Aktion dar, löst aber trotzdem Folge-Aktionen aus, die 
+durch zusätzliche Tasks dargestellt werden. Im Prinzip kann man so jede 
+Form ereignisgesteuerter Abläufe modellieren. Im Extremfall könnte sich 
+in einem solchen Szenario jeder Worker Thread fortlaufend selbst mit 
+weiteren Tasks versorgen. Alle Threads wären beschäftigt, und trotzdem 
+käme keine Konkurrenzsituation auf.</p>
+<p>Im Folgenden wird an jeweils einem Praxisbeispiel untersucht, wie 
+sich der ForkJoinPool in den beiden genannten Szenarien gegenüber dem 
+ThreadPoolExecutor schlägt. Der komplette Quellcode der Beispiele ist 
+auf <a href="http://github.com/peschlowp/ForkJoin" target="_blank" rel="external">GitHub</a> verfügbar.</p>
+<h3 class="subheading">MapReduce</h3><h3 class="subheading" id="nav_szenario_1__4">Szenario 1: MapReduce </h3>
+<p>Die betrachtete Anwendung ist eine Dokumentenverwaltung, mit der 
+Benutzer unter anderem Dokumente miteinander teilen und mit Tags 
+versehen können. Jedes Dokument ist also mit einer Menge von Benutzern 
+und einer Menge von Tags assoziiert. Eine mögliche Aufgabe wäre nun, für
+ jeden Benutzer die Menge aller Tags zu berechnen, die sich an den für 
+ihn sichtbaren Dokumenten befinden. Nützlich ist die Information zum 
+Beispiel um jedem Benutzer eine Liste von Suchvorschlägen bestehend aus 
+den Tags aller seiner Dokumente anzubieten.</p>
+<p>Diese Aufgabenstellung ist ein typischer Anwendungsfall für 
+MapReduce. Ein MapReduce-Job iteriert zunächst über die Eingabedaten 
+(alle Dokumente) und extrahiert bestimmte Daten (deren Benutzer und 
+Tags). Anschließend reduziert er diese zu einem Ergebnis (eine Tag-Menge
+ pro Benutzer).<br> </p>
+<p>Für den ThreadPoolExecutor wird ein Threadpool fester Größe mit <em>numThreads</em> Worker Threads verwendet. Die Menge der Dokumente wird in <em>numThreads</em>
+ gleich große Teilmengen aufgespalten, die als Tasks zur Bearbeitung 
+einzuplanen sind. Jeder Task führt einen Teil des MapReduce-Jobs für  
+seine Dokumente durch. Sobald der ThreadPoolExecutor alle Tasks 
+fertiggestellt hat, werden deren Ergebnisse in einem abschließenden 
+Schritt miteinander kombiniert.  </p>
+<p>Der ForkJoinPool wird ebenfalls mit <em>numThreads</em> Worker Threads initialisiert. <em>numThreads</em>
+ beschreibt hier die ungefähre Anzahl an Worker Threads, die aktiv an 
+Tasks arbeiten. Das zu beachten ist wichtig, da ein Thread 
+gegebenenfalls erst auf die Ergebnisse abgezweigter Tasks warten muss, 
+bevor er die ursprüngliche Task abschließen kann. Der Thread versucht 
+dann zwar zunächst, ausgewählte Tasks von anderen Threads auszuführen, 
+statt einfach nur zu warten. Sollte das allerdings nicht möglich sein, 
+wird er in den Ruhezustand versetzt. In solchen Situationen behält sich 
+der ForkJoinPool vor, den Ausfall durch einen zusätzlichen Worker Thread
+ zu kompensieren. Daher lässt sich die Thread-Anzahl beim ForkJoinPool 
+nur näherungsweise kontrollieren.</p>
+<p>Um die Formulierung von MapReduce-Jobs für den ForkJoinPool allgemein
+ halten zu können, lässt sich im vorliegenden Beispiel eine Abstraktion 
+durch die Definition von zwei Interfaces erreichen:</p>
+<pre class="rte__tx--listing">public interface Input&lt;T&gt; {<br>    boolean shouldBeComputedDirectly();<br>    Output&lt;T&gt; computeDirectly();<br>    List&lt;MapReduceTask&lt;T&gt;&gt; split();<br>}</pre>
+<pre class="rte__tx--listing">public interface Output&lt;T&gt; {<br>    Output&lt;T&gt; reduce(Output&lt;T&gt; other);<br>    T getResult();<br>}</pre>
+<p>Der Typparameter <em>T</em> steht für den Ausgabetyp des gesamten MapReduce-Jobs. <em>Input&lt;T&gt;</em>
+ stellt die Eingabedaten für einen Task dar und kann Auskunft darüber 
+geben, ob der Task weiter zu zerlegen oder direkt zu berechnen ist (<em>shouldBeComputedDirectly()</em>). Entsprechend kann Input&lt;T&gt; sich direkt berechnen (<em>computeDirectly()</em>) oder in neue Tasks zerlegen lassen (<em>split()</em>). <em>Output&lt;T&gt;</em>
+ repräsentiert das Ergebnis eines Tasks und unterstützt, neben dem 
+Zusammenführen mehrerer solcher Ergebnisse zu einem gemeinsamen (<em>reduce()</em>), das Abfragen des Gesamtergebnisses (<em>getResult()</em>).</p>
+<p>Mit den beiden Interfaces lässt sich eine Klasse <em>MapReduceTask&lt;T&gt;</em> definieren. Da sie ein Ergebnis zurückliefern soll, ist sie von <em>RecursiveTask</em> abgeleitet.</p>
+<pre class="rte__tx--listing">public class MapReduceTask&lt;T&gt; extends<br>    RecursiveTask&lt;Output&lt;T&gt;&gt; {<br>    private final Input&lt;T&gt; input;<br><br>    public MapReduceTask(Input&lt;T&gt; input) {<br>    this.input = input;<br>    }<br><br>    @Override<br>    protected Output&lt;T&gt; compute() {<br>    if (input.shouldBeComputedDirectly()) {<br>        return input.computeDirectly();<br>    }<br>    List&lt;MapReduceTask&lt;T&gt;&gt; subTasks = input.split();<br>    for (int i = 1; i &lt; subTasks.size(); i++) {<br>        subTasks.get(i).fork();<br>    }<br>    Output&lt;T&gt; result = subTasks.get(0).compute();<br>    for (int i = 1; i &lt; subTasks.size(); i++) {<br>        result = result.reduce(subTasks.get(i).join());<br>    }<br>    return result;<br>    }<br>}</pre>
+<p>Sobald ein Worker Thread ein Task ausführt, wird die <em>compute()</em>-Methode
+ aufgerufen. Während der Abarbeitung wird zunächst überprüft, ob der 
+Task direkt zu berechnen ist. Andernfalls ist die Eingabe in neue Tasks 
+aufzuteilen. Alle bis auf einen werden mit <em>fork()</em> in die lokale
+ Task Queue eingeplant, wo sie anderen Threads zum Bearbeiten zur 
+Verfügung stehen. Der verbleibende Task wird durch den Aufruf von <em>compute()</em> ausgeführt (was zu einem weiteren Zerlegen führen kann). Abschließend wartet das Programm mit <em>join()</em> auf die Ergebnisse der abgezweigten Tasks, die es zusammenführt und als Gesamtes zurückgibt.</p>
+<p>Die eigentliche "Business-Logik" (die Berechnung der Tags) befindet sich in den Implementierungen von <em>Input&lt;T&gt;</em> und <em>Output&lt;T&gt;</em>, für die auf das GitHub-Repository verwiesen sei.</p>
+<h3 class="subheading">Benchmark</h3><h3 class="subheading" id="nav_aufbau_des__5">Aufbau des Benchmarks </h3>
+<p>Es werden Szenarien mit 2.000.000 Dokumenten betrachtet, von denen 
+jedes mit maximal drei Benutzern und Tags assoziiert ist. Ein Task ist 
+direkt zu berechnen, falls er maximal 10.000 Dokumente umfasst. 
+Andernfalls wird er in zwei neue Tasks mit jeweils der Hälfte der 
+Dokumente zerlegt.  </p>
+<p>Performance-Ergebnisse des Benchmarks werden im Folgenden durch 
+Speedup-Werte in Abhängigkeit der Anzahl verwendeter Worker Threads 
+dargestellt (siehe Abbildung 2, 3 und 6). Der jeweilige Wert ergibt sich
+ aus der Laufzeit des Benchmarks unter Verwendung des ThreadPoolExecutor
+ beziehungsweise ForkJoinPool, ins Verhältnis gesetzt zur Laufzeit einer
+ sequenziellen Berechnung mit nur einem Thread (ohne einen Pool). Jede 
+dieser Laufzeiten berechnet sich wiederum als Mittelwert aus 20 Läufen 
+desselben Szenarios.</p>
+<p>Um den Einfluss des Just-In-Time-Compilers zu minimieren, wurden 
+jedem Benchmark zehn Warm-up-Läufe in derselben JVM vorgeschaltet. Durch
+ das Verwenden einer festen Heap-Größe von 4 GByte ließ sich der Anteil 
+der Garbage Collection an der Gesamtlaufzeit durchweg unter 5 Prozent 
+halten. Alle Benchmarks liefen auf einem Rechner mit 32 virtuellen 
+Prozessoren (in Form von 16 physikalischen Cores plus Hyperthreading).</p>
+<h3 class="subheading" id="nav_betrachtung_der__6">Betrachtung der Ergebnisse </h3><p>Wie
+ Abbildung 2 zeigt, können sowohl der ThreadPoolExecutor als auch der 
+ForkJoinPool die Berechnung gegenüber der sequenziellen Variante 
+beschleunigen. Allerdings erzielt der ThreadPoolExecutor bis zur Anzahl 
+verfügbarer Prozessoren durchweg einen höheren Speedup. Genau solche 
+Ergebnisse führen oft zu Verwunderung – denn das Szenario sollte 
+eigentlich gut für Fork/Join geeignet sein.</p>
+
+
+
+
+  
+
+
+<!-- RSPEAK_STOP -->
+<figure class="rte__inlinebild akwa-inline-img col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+    <a href="https://www.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html?view=zoom;zoom=8" class="grossbild cbox_gallery akwa-inline-img__link cboxElement" data-grossbildsrc="/developer/imgs/06/9/5/1/1/7/0/abb2-bf06e0a4ec7da731.png">
+    
+  <img src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/abb2-bf06e0a4ec7da731.png" alt="Der ThreadPoolExecutor erzielt bis zur Anzahl der verfügbaren Prozessoren einen höheren Speedup als der ForkJoinPool (Abb. 2)." class="akwa-article-teaser__image">
+</a>    <figcaption class="rte__inlinebild_source akwa-caption"><span class="akwa-caption__text">
+          Der ThreadPoolExecutor erzielt bis zur Anzahl der verfügbaren 
+Prozessoren einen höheren Speedup als der ForkJoinPool (Abb. 2).
+        </span>
+    </figcaption>
+</figure>
+<!-- RSPEAK_START -->
+
+<p>Die Erklärung für die Ergebnisse ist, dass alle Eingabe-Tasks einen 
+ähnlichen Berechnungsaufwand mit sich bringen. Die rekursive Zerlegung 
+und das Work Stealing des ForkJoinPool sind folglich unnötig. Im 
+Vergleich zum ThreadPoolExecutor bleibt nur der Overhead für die 
+Erstellung zusätzlicher Tasks. Obwohl MapReduce also eine gut geeignete 
+Anwendung für den ForkJoinPool ist, muss das nicht heißen, dass der 
+ForkJoinPool auch immer die beste Lösung ist. Lässt sich ein Problem 
+zuverlässig in gleichgroße Teile partitionieren, ist der 
+ThreadPoolExecutor (oder sogar das explizite Starten und Zusammenführen 
+eigener Threads) oft vorzuziehen.</p>
+<p>Man kann sich jedoch nicht unbedingt darauf verlassen, dass die 
+Rechenlast gleichmäßig auf die Eingabe-Tasks verteilt ist. So können zum
+ Beispiel manche Dokumente von mehr Benutzern geteilt werden oder weit 
+mehr Tags besitzen als andere. In einer zweiten Betrachtung des 
+Beispiels soll deshalb ein Viertel aller Dokumente mit bis zu viermal so
+ vielen Benutzern und Tags assoziiert sein.</p>
+
+
+
+
+  
+
+
+<!-- RSPEAK_STOP -->
+<figure class="rte__inlinebild akwa-inline-img col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+    <a href="https://www.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html?view=zoom;zoom=9" class="grossbild cbox_gallery akwa-inline-img__link cboxElement" data-grossbildsrc="/developer/imgs/06/9/5/1/1/7/0/abb3-03476ec8345a1cf8.png">
+    
+  <img src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/abb3-03476ec8345a1cf8.png" alt="Bei ungleichmäßig verteilter Rechenlast schneidet der ForkJoinPool unverändert gut ab, während der ThreadPoolExecutor stark unter dem Ungleichgewicht leidet (Abb. 3)." class="akwa-article-teaser__image">
+</a>    <figcaption class="rte__inlinebild_source akwa-caption"><span class="akwa-caption__text">
+          Bei ungleichmäßig verteilter Rechenlast schneidet der 
+ForkJoinPool unverändert gut ab, während der ThreadPoolExecutor stark 
+unter dem Ungleichgewicht leidet (Abb. 3).
+        </span>
+    </figcaption>
+</figure>
+<!-- RSPEAK_START -->
+
+<p>Wie Abbildung 3 zeigt, erledigt der ForkJoinPool die Berechnung 
+unverändert schnell – der Speedup ist sogar etwas höher, weil die 
+Rechenlast insgesamt gestiegen ist. Der ThreadPoolExecutor hingegen 
+leidet erheblich unter dem Ungleichgewicht. Der Grund hierfür ist, dass 
+der ForkJoinPool durch Work Stealing automatisch für einen Lastausgleich
+ zwischen den Threads sorgt, während der ThreadPoolExecutor keinerlei 
+Mechanismus dafür bereitstellt. </p>
+<p>Zum Beleg veranschaulicht Abbildung 4 die Zustände der Worker Threads
+ während der Berechnung der Benchmarks durch den ThreadPoolExecutor mit 
+vier Threads (gemessen mit VisualVM; grün heißt "lauffähig", gelb heißt 
+"wartend"). Ein Thread hat stets den Großteil der Rechenlast alleine zu 
+tragen. Das erklärt, warum der ThreadPoolExecutor bei steigender Anzahl 
+Threads wieder etwas besser abschneidet: Das Ungleichgewicht verteilt 
+sich dann auf mehrere Threads.</p>
+
+
+
+
+  
+
+
+<!-- RSPEAK_STOP -->
+<figure class="rte__inlinebild akwa-inline-img col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+    <a href="https://www.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html?view=zoom;zoom=10" class="grossbild cbox_gallery akwa-inline-img__link cboxElement" data-grossbildsrc="/developer/imgs/06/9/5/1/1/7/0/abb4-ff726042a4e94351.png">
+    
+  <img src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/abb4-ff726042a4e94351.png" alt="Beim ThreadPoolExecutor führt ein Thread den Großteil der Berechnung durch, während die anderen&lt;br /&gt;
+im Ruhezustand sind (Abb. 4)." class="akwa-article-teaser__image">
+</a>    <figcaption class="rte__inlinebild_source akwa-caption"><span class="akwa-caption__text">
+          Beim ThreadPoolExecutor führt ein Thread den Großteil der Berechnung durch, während die anderen
+im Ruhezustand sind (Abb. 4).
+        </span>
+    </figcaption>
+</figure>
+<!-- RSPEAK_START -->
+
+<p>Zum Vergleich zeigt Abbildung 5, dass die Threads beim ForkJoinPool 
+dank des Work-Stealing-Verfahrens wesentlich besser ausgelastet sind. Es
+ lässt sich beobachten, dass zusätzliche Worker Threads gestartet 
+werden, wenn bereits aktive Threads auf die Ergebnisse anderer Tasks 
+warten müssen. Trotzdem sind zu jeder Zeit nur vier Worker Threads 
+tatsächlich lauffähig, die anderen befinden sich im Ruhezustand.</p>
+
+
+
+
+  
+
+
+<!-- RSPEAK_STOP -->
+<figure class="rte__inlinebild akwa-inline-img col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+    <a href="https://www.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html?view=zoom;zoom=11" class="grossbild cbox_gallery akwa-inline-img__link cboxElement" data-grossbildsrc="/developer/imgs/06/9/5/1/1/7/0/abb5-c82c4c89477555f4.png">
+    
+  <img src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/abb5-c82c4c89477555f4.png" alt="Beim ForkJoinPool findet ein automatischer Lastausgleich durch Work Stealing und gegebenenfalls zusätzliche Worker Threads statt (Abb. 5)." class="akwa-article-teaser__image">
+</a>    <figcaption class="rte__inlinebild_source akwa-caption"><span class="akwa-caption__text">
+          Beim ForkJoinPool findet ein automatischer Lastausgleich durch
+ Work Stealing und gegebenenfalls zusätzliche Worker Threads statt (Abb.
+ 5).
+        </span>
+    </figcaption>
+</figure>
+<!-- RSPEAK_START -->
+
+<p>Insgesamt lässt sich festhalten: Der ThreadPoolExecutor ist 
+vorzuziehen, wenn die Rechenlast gleichmäßig auf die Worker Threads 
+verteilt ist. Um das zu garantieren, ist allerdings eine genaue Kenntnis
+ der Eingabedaten nötig. Der ForkJoinPool hingegen zeigt unabhängig von 
+den Eingabedaten eine gute Performance und stellt damit die deutlich 
+robustere Lösung dar.</p>
+<h3 class="subheading">Actor Scheduling</h3><h3 class="subheading" id="nav_szenario_2__7">Szenario 2: Actor Scheduling </h3>
+<p>Actors ziehen derzeit großes Interesse auf sich, da sie 
+leichtgewichtiger als Threads sind und dank der ausschließlich über 
+Nachrichten laufenden Kommunikation ein robustes Programmiermodell 
+bieten.  Hinter den Kulissen verwenden viele Actor-Frameworks jedoch 
+Thread Pools, deren Worker Threads diejenigen Actors ausführen, die 
+Nachrichten in ihrer Mailbox haben. Der ForkJoinPool ist demzufolge 
+besonders für Actor-Frameworks auf der JVM relevant.</p>
+<p>Verwendung findet eine kleine Actor-Scheduling-Implementierung, die im Kern ähnliche Mechanismen wie das <a href="http://akka.io/" target="_blank" rel="external">Akka-Framework</a>
+ nutzt. Es wird an dieser Stelle nur die Definition des Tasks gezeigt, 
+der Rest lässt sich im Code im GitHub-Repository nachvollziehen.</p>
+<pre class="rte__tx--listing">public class ActorForkJoinTask extends RecursiveAction {<br>    private final AbstractDispatcher dispatcher;<br>    private final Mailbox mailbox;<br><br>    public ActorForkJoinTask(AbstractDispatcher dispatcher,<br>        Mailbox mailbox) {<br>    this.dispatcher = dispatcher;<br>    this.mailbox = mailbox;<br>    }<br><br>    @Override<br>    protected void compute() {<br>     int counter = 0;<br>     Message message;<br>     while (counter++ &lt; ActorBenchmarkConfig.MAX_CONSUME_BURST<br>         &amp;&amp; (message = mailbox.pollMessage()) != null) {<br>         mailbox.getActor().receive(message);<br>     }<br>     mailbox.setScheduled(false);<br>     if (!mailbox.isEmpty()) {<br>         dispatcher<br>             .scheduleUnlessAlreadyScheduled(mailbox<br>                 .getActor().getId());<br>     }<br>    }<br>}<br></pre>
+<p>Der <em>ActorForkJoinTask</em> leitet sich von <em>RecursiveAction</em>
+ ab, da er keinen Rückgabewert benötigt. Bei Ausführung des Tasks werden
+ Nachrichten aus der Mailbox des Actors genommen und dem Actor zur 
+Verarbeitung übergeben. Enthält die Mailbox bei Erreichen einer 
+Obergrenze noch weitere Nachrichten, wird der Actor erneut zur 
+Ausführung vorgemerkt. Der Dispatcher fügt hierzu einen neuen 
+ActorForkJoinTask in die lokale Task Queue des Worker Threads ein.</p>
+<p>Die Implementierung des Tasks für den ThreadPoolExecutor ist praktisch identisch, leitet sich aber von <em>Runnable</em> ab. Ist ein Actor auszuführen, plant der Dispatcher einen neuen Task in die zentrale Eingangs-Queue ein.</p>
+<p>Sowohl beim ForkJoinPool als auch beim ThreadPoolExecutor achtet der 
+Dispatcher intern darauf, keinen Actor doppelt einzuplanen. So ist 
+gewährleistet, dass niemals zwei Threads gleichzeitig denselben Actor 
+ausführen, und die Implementierung des Actors selbst muss sich nicht um 
+Thread-Synchronisation kümmern.</p>
+<h3 class="subheading" id="nav_betrachtung_der__8">Betrachtung der Ergebnisse </h3><p>Der
+ Benchmark an sich ist genauso aufgebaut wie beim MapReduce-Szenario. Im
+ Folgenden werden Ergebnisse aus einem Szenario mit 1000 Actors gezeigt.
+ In den Mailboxen von 200 Actors befindet sich zu Beginn eine Nachricht,
+ von der jede in der Folge 100.000-mal an einen zufällig bestimmten 
+Actor  weitergeleitet und zum Schluss gelöscht wird. Während dem 
+Ausführen eines Actors arbeitet dieser immer nur eine Nachricht auf 
+einmal ab.</p>
+
+
+
+
+  
+
+
+<!-- RSPEAK_STOP -->
+<figure class="rte__inlinebild akwa-inline-img col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+    <a href="https://www.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html?view=zoom;zoom=12" class="grossbild cbox_gallery akwa-inline-img__link cboxElement" data-grossbildsrc="/developer/imgs/06/9/5/1/1/7/0/abb6-27cf722549e835f5.png">
+    
+  <img src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/abb6-27cf722549e835f5.png" alt="Beim Actor Scheduling schneidet der ForkJoinPool besser ab als der ThreadPoolExecutor (Abb. 6)." class="akwa-article-teaser__image">
+</a>    <figcaption class="rte__inlinebild_source akwa-caption"><span class="akwa-caption__text">
+          Beim Actor Scheduling schneidet der ForkJoinPool besser ab als der ThreadPoolExecutor (Abb. 6).
+        </span>
+    </figcaption>
+</figure>
+<!-- RSPEAK_START -->
+
+<p>Abbildung 6 zeigt, dass der ThreadPoolExecutor für dieses Szenario 
+überhaupt nicht geeignet ist. Die gemeinsame Eingangs-Queue führt zu 
+einer erheblichen Menge von Konkurrenzsituationen, was Abbildung 7 durch
+ die Thread-Zustände veranschaulicht.</p>
+
+
+
+
+  
+
+
+<!-- RSPEAK_STOP -->
+<figure class="rte__inlinebild akwa-inline-img col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+    <a href="https://www.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html?view=zoom;zoom=13" class="grossbild cbox_gallery akwa-inline-img__link cboxElement" data-grossbildsrc="/developer/imgs/06/9/5/1/1/7/0/abb7-07ff1dc407142c6a.png">
+    
+  <img src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/abb7-07ff1dc407142c6a.png" alt="Aufgrund von Konkurrenzsituationen beim Zugriff auf die gemeinsame Eingangs-Queue verbringen die Threads des ThreadPoolExecutor viel Zeit mit Warten (Abb. 7)." class="akwa-article-teaser__image">
+</a>    <figcaption class="rte__inlinebild_source akwa-caption"><span class="akwa-caption__text">
+          Aufgrund von Konkurrenzsituationen beim Zugriff auf die 
+gemeinsame Eingangs-Queue verbringen die Threads des ThreadPoolExecutor 
+viel Zeit mit Warten (Abb. 7).
+        </span>
+    </figcaption>
+</figure>
+<!-- RSPEAK_START -->
+
+<p>Der ForkJoinPool hingegen kann die Berechnung dank der lokalen Task 
+Queues bis zur Anzahl der virtuellen Prozessoren beschleunigen. Jeder 
+Worker Thread füllt seine eigene Task Queue fortwährend mit neuen Actor 
+Tasks, sodass es keine Konkurrenzsituationen auf den Queues gibt.</p>
+<p>Auffällig ist, dass der Speedup insgesamt eher gering ist, beim 
+ThreadPoolExecutor sogar stets deutlich kleiner als 1 (das heißt die 
+sequenzielle Berechnung ist schneller). Der Grund hierfür ist zum einen 
+die oben beschriebene Anforderung, beim parallelen Scheduling keinen 
+Actor gleichzeitig von mehreren Threads ausführen zu lassen. Das bringt 
+einen spürbaren Synchronisations-Overhead mit sich, der bei der 
+sequenziellen Berechnung nicht anfällt. Zum anderen erzeugen die Actors 
+im beschriebenen Beispiel beim Empfang von Nachrichten kaum Rechenlast 
+(die Nachricht wird lediglich an einen anderen Actor weitergeleitet), 
+sodass es wenig zu parallelisieren gibt.  </p>
+<p>Was den Durchsatz betrifft, hat der ForkJoinPool beim Actor 
+Scheduling klar die Nase vorn. Allerdings wirft ein solches Szenario 
+auch die Frage nach der Fairness auf. Da ein Worker Thread immer den 
+zuletzt eingefügten Task aus seiner Task Queue nimmt, kann es passieren,
+ dass ein Actor über einen längeren Zeitraum in der Task Queue wartet, 
+während andere Actors wiederholt ausgeführt werden. Für solche Fälle 
+stellt der ForkJoinPool deshalb einen Parameter, <em>asyncMode</em>, zur
+ Verfügung. Wird der gesetzt, arbeitet jeder Worker Thread die lokale 
+Task-Queue in der Reihenfolge der Einplanung ab. Er riskiert damit zwar 
+Konkurrenzsituationen mit anderen Threads, sorgt aber für mehr 
+Gerechtigkeit. In den gezeigten Beispielen ist der Overhead durch den <em>asyncMode</em> relativ gering, sodass er sich zugunsten der Fairness lohnt.</p>
+<p>Der <em>asyncMode</em> hilft leider nicht bei neuen Tasks, die von 
+außerhalb eingeplant werden. Solche Tasks können in der Eingangs-Queue 
+"verhungern", wenn die Worker Threads laufend neue Tasks für sich selbst
+ generieren. Nicht zuletzt aufgrund dieses Problems verwenden aktuelle 
+Weiterentwicklungen des ForkJoinPool keine zentrale Eingangs-Queue mehr,
+ sondern verteilen auch die von außerhalb eingeplanten Tasks direkt an 
+die Task Queues der Threads. Den aktuellen Stand der Implementierung 
+kann man von Doug Leas Concurrency JSR-166 Interest <a href="http://g.oswego.edu/dl/concurrency-interest/" target="_blank" rel="external">Site</a>
+ herunterladen und ausprobieren. Dort finden sich zudem verschiedene 
+Klassen, die nicht in Java 7 aufgenommen wurden oder erst für Java 8 
+geplant sind.</p>
+<h3 class="subheading" id="nav_fazit_9">Fazit</h3><p>Die wesentliche 
+Neuerung des ForkJoinPool sind die Task Queues der Worker Threads sowie 
+das Work-Stealing-Verfahren. Dadurch eignet sich der ForkJoinPool 
+prinzipiell für alle Szenarien, in denen Tasks bei ihrer Ausführung 
+weitere Tasks einplanen. Der Praxistest hat gezeigt, dass der 
+ForkJoinPool für Szenarien mit Zerlegung (wie zum Beispiel MapReduce) 
+gute Ergebnisse erzielt und robuster als der ThreadPoolExecutor ist. 
+Großes Potenzial hat der ForkJoinPool außerdem in ereignisgesteuerten  
+Szenarien (wie zum Beispiel Actor Scheduling), in denen allerdings auf 
+die Fairness zu achten ist. Aktuelle Weiterentwicklungen des 
+ForkJoinPool enthalten zusätzliche Optimierungen, sodass es spannend 
+sein wird zu beobachten, wohin die Reise geht.
+
+    (<a href="mailto:jul@heise.de">jul</a>)<br>
+
+
+</p>
+<p><em>Dr. Patrick Peschlow<br>ist Experte für die Java Virtual Machine 
+und hat langjährige Erfahrung in der Entwicklung paralleler und 
+verteilter Java-Anwendungen. Er arbeitet als Performance Engineer bei 
+der codecentric AG und ist aktuell an der Realisierung einer 
+hochskalierbaren Cloud-Anwendung beteiligt.</em></p>
+
+  </div>
+
+  <!-- RSPEAK_STOP -->
+  <footer class="pre-akwa-article-footer">
+  
+
+
+  <div class="article-footer">
+
+    <div class="article-footer__content">
+        
+
+
+
+
+
+ 
+
+      <a href="https://www.heise.de/forum/heise-Developer/Kommentare/Das-Fork-Join-Framework-in-Java-7/forum-35981/comment/" class="kommentare_lesen_link">Kommentare lesen (1
+      
+          Beitrag)
+      
+  </a>
+  
+
+
+
+
+
+
+
+        <nav class="article-footer__foren">
+          <span class="article-footer__foren-lable">
+            Forum zum Thema:
+          </span>
+
+          <a href="https://www.heise.de/forum/heise-Developer/Themen-Hilfe/Java/forum-1508/comment/" title="Zum Themenforum Java" class="article-footer__foren__link">Java
+          </a>
+        </nav>
+        <aside class="article-footer__keywords">
+          <header class="article-footer-keywords__header">
+            <span class="article-footer-keywords__lable">Themenseiten:</span>
+          </header>
+
+          <nav class="article-footer-keywords__nav">
+            <a href="https://www.heise.de/thema/Java" title="News und Artikel zum Thema Java" class="article-footer-keywords__item">
+              Java
+            </a>
+            <a href="https://www.heise.de/thema/Parallel-Computing" title="News und Artikel zum Thema Parallel Computing" class="article-footer-keywords__item">
+              Parallel Computing
+            </a>
+
+            
+          </nav>
+        </aside>
+
+    </div>
+
+    
+    <aside class="teaser_adliste akwa-ad-container akwa-ad-container__microsite-list developerteaser">
+        <a href="https://www.heise.de/mediadaten/heise-online/" target="_blank" class="hinweis_anzeige">Anzeige</a>
+        <ul class="microsites" data-teaser-tracking-name="microsites" data-teaser-tracking-rank="1755690: Das Fork/Join-Framework in Java 7" data-teaser-tracking-content="ad-microsites" data-teaser-tracking-id="microsites: 1755690: Das Fork/Join-Framework in Java 7">
+            <li><a href="http://pubads.g.doubleclick.net/gampad/clk?id=4490923621&amp;iu=/6514/www.heise.de/clicktracking/textlink" rel="nofollow" target="_blank">5 IT-Trends, die Sie auf dem Schirm haben sollten</a></li>
+            <li><a href="http://pubads.g.doubleclick.net/gampad/clk?id=4542263477&amp;iu=/6514/www.heise.de/clicktracking/textlink" rel="nofollow" target="_blank">Arbeitgeber Bewerbungen: Heise Karriere-Netzwerk</a></li>
+            <li><a href="http://pubads.g.doubleclick.net/gampad/clk?id=4630102289&amp;iu=/6514/www.heise.de/clicktracking/textlink" rel="nofollow" target="_blank">Geldanlage: von Mensch und Maschine profitieren</a></li>
+            <li><a href="http://pubads.g.doubleclick.net/gampad/clk?id=4620337340&amp;iu=/6514/www.heise.de/clicktracking/textlink" rel="nofollow" target="_blank">DSGVO: Was nach dem 25. Mai noch zu tun ist</a></li>
+            <li><a href="http://pubads.g.doubleclick.net/gampad/clk?id=4621966269&amp;iu=/6514/www.heise.de/clicktracking/textlink" rel="nofollow" target="_blank">Special: DSGVO Ratgeber</a></li>
+            <li><a href="http://pubads.g.doubleclick.net/gampad/clk?id=4617500792&amp;iu=/6514/www.heise.de/clicktracking/textlink" rel="nofollow" target="_blank">Interessante Jobangebote - IT-Jobtag in Leipzig!</a></li>
+        </ul>
+    </aside>
+
+
+  </div>
+
+  <div class="article-footer_shariff">
+    <div data-backend-url="/shariff-backend/" class="shariff clear" data-services="[&quot;facebook&quot;,&quot;twitter&quot;,&quot;googleplus&quot;,&quot;mail&quot;,&quot;info&quot;]" data-mail-url="/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html?view=mail"><ul class="theme-color orientation-horizontal col-5"><li class="shariff-button facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.heise.de%2Fdeveloper%2Fartikel%2FDas-Fork-Join-Framework-in-Java-7-1755690.html" data-rel="popup" rel="nofollow" title="Bei Facebook teilen" role="button" aria-label="Bei Facebook teilen"><span class="fa fa-facebook"></span><span class="share_text">teilen</span><span class="share_count">0</span></a></li><li class="shariff-button twitter"><a href="https://twitter.com/intent/tweet?text=Das%20Fork%2FJoin-Framework%20in%20Java%207%20%7C%20heise%20Developer&amp;url=https%3A%2F%2Fwww.heise.de%2Fdeveloper%2Fartikel%2FDas-Fork-Join-Framework-in-Java-7-1755690.html" data-rel="popup" rel="nofollow" title="Bei Twitter teilen" role="button" aria-label="Bei Twitter teilen"><span class="fa fa-twitter"></span><span class="share_text">tweet</span></a></li><li class="shariff-button googleplus"><a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.heise.de%2Fdeveloper%2Fartikel%2FDas-Fork-Join-Framework-in-Java-7-1755690.html" data-rel="popup" rel="nofollow" title="Bei Google+ teilen" role="button" aria-label="Bei Google+ teilen"><span class="fa fa-google-plus"></span><span class="share_text">teilen</span></a></li><li class="shariff-button mail"><a href="https://www.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html?view=mail" rel="nofollow" title="Per E-Mail versenden" role="button" aria-label="Per E-Mail versenden"><span class="fa fa-envelope"></span><span class="share_text">mail</span></a></li><li class="shariff-button info"><a href="http://ct.de/-2467514" target="_blank" rel="noopener noreferrer" title="Weitere Informationen" role="button" aria-label="Weitere Informationen"><span class="fa fa-info"></span><span class="share_text">Info</span></a></li></ul></div>
+
+
+    <div class="article-footer__link-area">
+      <a href="https://www.heise.de/-1755690" class="article-footer__link article-footer__link--permalink">
+        https://www.heise.de/-1755690
+      </a>
+      <a href="https://www.heise.de/developer/artikel/Das-Fork-Join-Framework-in-Java-7-1755690.html?view=print" rel="nofollow" class="article-footer__link article-footer__link--print">
+          Drucken
+      </a>
+    </div>
+  </div>
+
+  
+
+    <!-- RSPEAK_STOP -->
+<div class="akwa-ad-container akwa-ad-container--native">
+    <div id="div-gpt-ad-1">
+    <a href="http://www.heise.de/mediadaten/online/" target="_blank" class="hinweis_anzeige">Anzeige</a>
+    <script type="text/javascript">
+      googletag.display("div-gpt-ad-1");
+    </script>
+    <noscript><div><a href="//pubads.g.doubleclick.net/gampad/jump?iu=%2F6514%2Fwww.heise.de%2Fdeveloper%2Fdev-inhalt%2F&kw=Java%2CParallel%2520Computing&c=5890348134&sz=695x165%7C695x200&tile=1" target="_blank"><img alt="" src="//pubads.g.doubleclick.net/gampad/ad?iu=%2F6514%2Fwww.heise.de%2Fdeveloper%2Fdev-inhalt%2F&kw=Java%2CParallel%2520Computing&c=5890348134&sz=695x165%7C695x200&tile=1" /></a></div></noscript>
+  </div>
+
+</div>
+<!-- RSPEAK_START -->
+</footer>
+
+
+  <div class="adbottom akwa-ad-container akwa-ad-container__ad-bottom">
+    <!--googleoff: index-->
+<!-- RSPEAK_STOP -->
+<a href="http://www.heise.de/mediadaten/online/" target="_blank" class="hinweis_anzeige">Anzeige</a><br>  <div id="div-gpt-ad-5">
+    
+    <script type="text/javascript">
+      googletag.display("div-gpt-ad-5");
+    </script>
+    <noscript><div><a href="//pubads.g.doubleclick.net/gampad/jump?iu=%2F6514%2Fwww.heise.de%2Fdeveloper%2Fdev-inhalt%2F&kw=Java%2CParallel%2520Computing&c=5890348134&sz=500x500%7C300x600%7C300x250%7C336x280%7C695x110&tile=5" target="_blank"><img alt="" src="//pubads.g.doubleclick.net/gampad/ad?iu=%2F6514%2Fwww.heise.de%2Fdeveloper%2Fdev-inhalt%2F&kw=Java%2CParallel%2520Computing&c=5890348134&sz=500x500%7C300x600%7C300x250%7C336x280%7C695x110&tile=5" /></a></div></noscript>
+  </div>
+
+<!-- RSPEAK_START -->
+<!--googleon: index-->
+  </div>
+</article>
+
+
+        </div>
+
+      </div>
+
+      <div id="sitemap">
+        <ul>
+            <li><b><a href="https://www.heise.de/developer/" title="News">News</a></b>
+                <a href="https://www.heise.de/developer/news/" title="7-Tage-News">7-Tage-News</a>
+                <a href="https://www.heise.de/developer/news/archiv/" title="News-Archiv">News-Archiv</a>
+            </li>
+            <li><b><a href="https://www.heise.de/developer/rubriken/" title="Rubriken">Rubriken</a></b>
+                <a href="https://www.heise.de/developer/sprachen-1037.html" title="Sprachen">Sprachen</a>
+                <a href="https://www.heise.de/developer/architektur-methoden-1031.html" title="Architektur/Methoden">Architektur/Methoden</a>
+                <a href="https://www.heise.de/developer/werkzeuge-1041.html" title="Werkzeuge">Werkzeuge</a>
+                <a href="https://www.heise.de/developer/know-how-1033.html" title="Know-how">Know-how</a>
+                <a href="https://www.heise.de/developer/standards-1039.html" title="Standards">Standards</a>
+                <a href="https://www.heise.de/developer/literatur-1035.html" title="Literatur">Literatur</a>
+                <a href="https://www.heise.de/developer/videos-3294461.html" title="Videos">Videos</a>
+                <a href="https://www.heise.de/developer/Veranstaltungsberichte-3344266.html" title="Veranstaltungsberichte">Veranstaltungsberichte</a>
+            </li>
+            <li><b><a href="https://www.heise.de/developer/blog/" title="Blogs">Blogs</a></b>
+                <a href="https://www.heise.de/developer/babel-bulletin-980714.html" title="Babel-Bulletin">Babel-Bulletin</a>
+                <a href="https://www.heise.de/developer/der-dotnet-doktor-1292.html" title="Der Dotnet-Doktor">Der Dotnet-Doktor</a>
+                <a href="https://www.heise.de/developer/the-next-big-thing-1790061.html" title="the next big thing">the next big thing</a>
+                <a href="https://www.heise.de/developer/neuigkeiten-von-der-insel-1920360.html" title="Neuigkeiten von der Insel">Neuigkeiten von der Insel</a>
+                <a href="https://www.heise.de/developer/Tales_from_the_Web_side-2548664.html" title="Tales from the Web side">Tales from the Web side</a>
+                <a href="https://www.heise.de/developer/Continuous-Architecture-2687847.html" title="Continuous Architecture">Continuous Architecture</a>
+                <a href="https://www.heise.de/developer/Der_Pragmatische_Architekt-2732748.html" title="Der Pragmatische Architekt">Der Pragmatische Architekt</a>
+                <a href="https://www.heise.de/developer/UeberKreuz-2753600.html" title="ÜberKreuz ">ÜberKreuz </a>
+                <a href="https://www.heise.de/developer/ModernesCplusplus-3691794.html" title="Modernes C++">Modernes C++</a>
+                <a href="https://www.heise.de/developer/colspan-3971774.html" title="colspan">colspan</a>
+            </li>
+            <li><b><a href="https://www.heise.de/developer/podcast/" title="Podcast">Podcast</a></b>
+            </li>
+            <li><b><a href="https://www.heise.de/developer/videos-3294461.html" title="Videos">Videos</a></b>
+            </li>
+            <li><b><a href="https://www.heise.de/developer/Konferenzen-von-heise-Developer-2725968.html" title="Konferenzen">Konferenzen</a></b>
+            </li>
+            <li><b><a href="https://www.heise.de/developer/termine/" title="Termine">Termine</a></b>
+            </li>
+        </ul>
+      </div>
+
+  </div>
+
+  
+        <div style="display: inline;"><img id="ivw_pixel_intern" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/Das-Fork-Join-Framework-in-Java-7-1755690.gif" alt="" width="1" height="1"></div>
+
+        
+
+        
+        <script type="text/javascript">
+            var iam_data = {
+                "st":"heise",
+                "cp":"dev",
+                "sv":"in",
+                "co":"%2Fdeveloper%2Fartikel%2FDas-Fork-Join-Framework-in-Java-7-1755690.html%3Fseite%3Dall"
+            }
+            
+            if ( document.body.dataset.device === "mobile" && typeof document.documentElement.dataset.responsive !== "undefined") {
+                iam_data.st = "mobheise";
+                iam_data.sv = "ke";
+            }
+            iom.c(iam_data);
+
+
+        </script>
+
+        <script type="text/javascript">
+            <!--//--><![CDATA[//><!--
+            // VGWORT-CROP-MARKER
+            var vgwort_token='dbf01d2a93d04e68b0c94a9cb3fb1cf9';
+            document.write('<div style="display: inline;"><img src="https://ssl-heise.met.vgwort.de/na/' +  vgwort_token);
+            document.write('" width="1" height="1" alt="" /><' + '/div>');
+            //--><!]]>
+        </script><div style="display: inline;"><img src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/dbf01d2a93d04e68b0c94a9cb3fb1cf9.gif" alt="" width="1" height="1"></div>
+    <!-- Webtrekk 4.4.1, (c) www.webtrekk.com -->
+            <script type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/webtrekk-v4.js"></script>
+
+                <script type="text/javascript">
+        <!--
+        var pageConfig = {
+            linkTrack : "standard", // Activate Link Tracking    [link or standard]
+            heatmap : "0",          // Activate Heatmap Tracking [1 = on | 0 = off]
+            form : "0",             // Activate Form Tracking    [1 = on | 0 = off]
+            trackId: "288689636920174",
+            pixelSampling : "",
+            contentId: "www.heise.de.developer.artikel.das-fork-join-framework-in-java-7-1755690"
+        };
+        var wt = new webtrekkV3(pageConfig);
+        wt.contentGroup = {};
+        wt.contentGroup['1']  = "www.heise.de";
+        wt.contentGroup['2']  = "developer";
+        wt.contentGroup['3']  = "artikel";
+        wt.contentGroup['4']  = "das-fork-join-framework-in-java-7-1755690";
+        wt.contentGroup['9']  = "das-fork-join-framework-in-java-7-1755690";
+        wt.contentGroup['10']  = "artikel";
+        wt.customParameter = {};
+        wt.customParameter['1']  = "all/5";
+        wt.customParameter['2']  = "java;parallel computing";
+        wt.customParameter['6']  = "java;parallel computing";
+        wt.customParameter['8']  = "2012-11-23T14:39:00";
+        wt.customParameter['9']  = "developer";
+        wt.customParameter['15']  = "Patrick Peschlow";
+        wt.customParameter['17']  = "undefiniert";
+        
+        
+        if (document.getElementsByTagName('body')[0].getAttribute("data-device")) {
+            wt.customParameter['17'] = document.getElementsByTagName('body')[0].getAttribute("data-device");
+        }
+        
+        wt.customSessionParameter = {};
+        try {
+            if (window.heiseLogin) {
+                wt.customSessionParameter['1'] =
+                    window.heiseLogin.sso_logged_in ? "1" : "0";
+                wt.customerId = window.heiseLogin.user_hash;
+            }
+        } catch(e) { }
+        
+        
+        
+        
+        wt.heatmapRefpoint = 'container_content';
+        wt.sendinfo();
+        
+        
+        wt.executePluginFunction = "wt_teaserTracking";
+        window.wt_ttv2 = window.wt_ttv2 || [];
+        window.webtrekkTeaserTest = [];
+        var allAdWidgets = document.querySelectorAll('.widget-werbung[data-widget-werbung-name]');
+        Array.from(allAdWidgets).forEach(function(element) {
+          window.wt_ttv2.push({
+            selector: element,
+            data: {
+              name: element.getAttribute('data-widget-werbung-name'),
+              rank: element.getAttribute('data-widget-werbung-rank'),
+              content: element.getAttribute('data-widget-werbung-content')
+            }
+          });
+        });
+        var allTeaser = document.querySelectorAll('[data-teaser-tracking-id]');
+        Array.from(allTeaser).forEach(function(element) {
+          var teaser = {
+            selector: element,
+            data: {
+              name: element.getAttribute('data-teaser-tracking-name'),
+              rank: element.getAttribute('data-teaser-tracking-rank'),
+              content: element.getAttribute('data-teaser-tracking-content')
+            }
+          };
+          window.webtrekkTeaserTest.push(teaser);
+          window.wt_ttv2.push(teaser)
+        });
+        
+        //-->
+        </script>
+        <noscript><div><img src="//prophet.heise.de/288689636920174/wt.pl?p=441,www.heise.de.developer.artikel.das-fork-join-framework-in-java-7-1755690&cg1=www.heise.de&cg10=artikel&cg2=developer&cg3=artikel&cg4=das-fork-join-framework-in-java-7-1755690&cg9=das-fork-join-framework-in-java-7-1755690&cp1=all%2F5&cp15=Patrick%20Peschlow&cp17=undefiniert&cp2=java%3Bparallel%20computing&cp6=java%3Bparallel%20computing&cp8=2012-11-23T14%3A39%3A00&cp9=developer" height="1" width="1" alt="" /></div></noscript>
+
+        
+        
+
+    <!-- /Webtrekk -->
+    
+
+    
+    <script type="text/javascript">
+      function _heise_sf_section_from_pathname() {
+        var path    = window.location.pathname;
+        var section = path.split('/')[1] || 'homepage';
+        if ( path === '/newsticker/' || path === '/newsticker/classic/' || path === '/newsticker/archiv/' ) {
+          section = 'homepage';
+        }
+        return section;
+      }
+    </script>
+
+      <script type="text/javascript">
+        var _sf_async_config={};
+        /** CONFIGURATION START **/
+        _sf_async_config.uid = 59838;
+        _sf_async_config.domain = 'heise.de';
+        _sf_async_config.useCanonical = false;
+        _sf_async_config.path = window.location.pathname;
+        _sf_async_config.sections = _heise_sf_section_from_pathname();
+        _sf_async_config.authors = 'die Redaktionen';
+        /** CONFIGURATION END **/
+      </script>
+
+    <script type="text/javascript">
+      (function(){
+        function loadChartbeat() {
+          window._sf_endpt=(new Date()).getTime();
+          var e = document.createElement('script');
+          e.setAttribute('language', 'javascript');
+          e.setAttribute('type', 'text/javascript');
+          e.setAttribute('src', '//static.chartbeat.com/js/chartbeat_video.js');
+          document.body.appendChild(e);
+        }
+        var oldonload = window.onload;
+        window.onload = (typeof window.onload != 'function') ?
+          loadChartbeat : function() { oldonload(); loadChartbeat(); };
+      })();
+    </script>
+
+    
+
+    
+    
+
+
+  <ul id="navi_bottom" class="nav navbar-nav"><li role="presentation" class="left"><a href="https://www.heise.de/Privacy-Policy-der-Heise-Medien-GmbH-Co-KG-4860.html">Datenschutzhinweis</a> </li><li role="presentation" class="left"><a href="https://www.heise.de/developer/impressum.html">Impressum</a></li><li role="presentation" class="left"><a href="https://www.heise.de/developer/kontakt/">Kontakt</a></li><li role="presentation" class="left"><a href="https://www.heise.de/mediadaten/online/">Mediadaten</a> </li>
+            <li role="presentation" class="bid_anzeige">951170</li>
+    <li role="presentation" class="right container_ho_footer_copyright"><a href="http://www.interred.de/" target="_blank">Content Management by <b>Inter<span class="tx_red interred_red">Red</span></b></a></li>
+        <li role="presentation" class="right container_ho_footer_copyright"><a href="https://www.heise-medien.de/">Copyright © 2018 Heise Medien</a></li>
+</ul>
+
+  
+
+
+
+
+
+
+
+<script src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/suche.js"></script>
+
+<script src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/heise.js"></script><section class="heise-modal newsletter_2014_modal"><div class="wrapper-transparent"></div><div class="stage"><button data-role="close">×</button></div></section>
+
+
+  
+
+
+
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><script language="javascript" type="text/javascript" src="Das%20Fork_Join-Framework%20in%20Java%207_heise%20Developer-Dateien/chartbeat_video.js"></script><div id="webtrekk-image" style="width: 0px; height: 0px; overflow: hidden;"></div></body></html>
+<!-- Created with InterRed V16.6, http://www.interred.de/, by InterRed GmbH -->
+<!-- BID: 951170, iBID: 2190639, CID: 1755690, iCID: 3697253 -->
+<!-- Link: $(LB951170:Linktext)$ $(LC1755690:Linktext)$ -->
+<!-- Generiert: 2018-02-13 14:37:58 -->

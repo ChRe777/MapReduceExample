@@ -11,34 +11,44 @@
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
- * limitations under the License. 
+ * limitations under the License.
  */
 
 package benchmark.document;
 
 /**
  * Default configuration for the document benchmark.
- * 
+ *
  * @author patrick.peschlow
  */
 public class DocumentBenchmarkConfig {
 
     public static enum Strategy {
-	SEQUENTIAL, FORKJOIN, THREADPOOL;
+        SEQUENTIAL, FORKJOIN, THREADPOOL;
     }
 
-    /** Number of warmup runs. */
+    /**
+     * Number of warmup runs.
+     */
     public static int NUM_WARMUP_RUNS = 10;
 
-    /** Number of timed runs. */
+    /**
+     * Number of timed runs.
+     */
     public static int NUM_TIMED_RUNS = 20;
 
-    /** Sequential/parallel execution strategy. */
+    /**
+     * Sequential/parallel execution strategy.
+     */
     public static Strategy STRATEGY = Strategy.THREADPOOL;
 
-    /** Number of threads for parallel benchmarks. */
+    /**
+     * Number of threads for parallel benchmarks.
+     */
     public static int NUM_THREADS = 4;
 
-    /** Threshold for the number of documents below which a task will be computed directly. */
+    /**
+     * Threshold for the number of documents below which a task will be computed directly.
+     */
     public static int FORKJOIN_CUTOFF = 10_000;
 }

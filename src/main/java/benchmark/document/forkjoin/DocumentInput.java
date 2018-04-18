@@ -11,7 +11,7 @@
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
- * limitations under the License. 
+ * limitations under the License.
  */
 
 package benchmark.document.forkjoin;
@@ -32,15 +32,15 @@ import document.usertags.UserTagsCalculator;
  * entities and knows its associated section via the low and high index bounds. The array is shared
  * in order to save memory. This is possible because the array is only read during the job but never
  * written to.
- * 
+ * <p>
  * This entity is computed directly when its associated document section is smaller than
  * {@link DocumentBenchmarkConfig#FORKJOIN_CUTOFF}. Direct computation is implemented by calling the
  * {@link UserTagsCalculator#compute(Document[], int, int)} method which contains the business
  * logic.
- * 
+ * <p>
  * When this entity is not computed directly, it splits itself into two new entities, each of which
  * takes one half of the document section of this entity.
- * 
+ *
  * @author patrick.peschlow
  */
 public class DocumentInput implements Input<UserTagsBundle> {
@@ -52,28 +52,32 @@ public class DocumentInput implements Input<UserTagsBundle> {
     private final int hi;
 
     public DocumentInput(Document[] documents, int lo, int hi) {
-	this.documents = documents;
-	this.lo = lo;
-	this.hi = hi;
+
+        this.documents = documents;
+        this.lo = lo;
+        this.hi = hi;
+
     }
 
     @Override
     public boolean shouldBeComputedDirectly() {
-	return hi - lo <= DocumentBenchmarkConfig.FORKJOIN_CUTOFF;
+        return hi - lo <= DocumentBenchmarkConfig.FORKJOIN_CUTOFF;
     }
 
     @Override
     public Output<UserTagsBundle> computeDirectly() {
-	return new DocumentOutput(UserTagsCalculator.compute(documents, lo, hi));
+        return new DocumentOutput(UserTagsCalculator.compute(documents, lo, hi));
     }
 
     @Override
     public List<MapReduceTask<UserTagsBundle>> split() {
-	List<MapReduceTask<UserTagsBundle>> tasks = new ArrayList<>(2);
-	int mid = (lo + hi) >>> 1;
-	tasks.add(new MapReduceTask<UserTagsBundle>(new DocumentInput(documents, lo, mid)));
-	tasks.add(new MapReduceTask<UserTagsBundle>(new DocumentInput(documents, mid, hi)));
 
-	return tasks;
+        List<MapReduceTask<UserTagsBundle>> tasks = new ArrayList<>(2);
+        int mid = (lo + hi) >>> 1;
+
+        tasks.add(new MapReduceTask<UserTagsBundle>(new DocumentInput(documents, lo, mid)));
+        tasks.add(new MapReduceTask<UserTagsBundle>(new DocumentInput(documents, mid, hi)));
+
+        return tasks;
     }
 }

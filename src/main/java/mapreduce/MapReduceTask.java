@@ -11,7 +11,7 @@
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
- * limitations under the License. 
+ * limitations under the License.
  */
 
 package mapreduce;
@@ -22,11 +22,9 @@ import java.util.concurrent.RecursiveTask;
 /**
  * A ForkJoinTask to be used for generic Map/Reduce computations. Needs to be initialized with an
  * input entity and provides an output entity upon successful execution.
- * 
+ *
+ * @param <T> the type of the result computed by the job
  * @author patrick.peschlow
- * 
- * @param <T>
- *            the type of the result computed by the job
  */
 public class MapReduceTask<T> extends RecursiveTask<Output<T>> {
 
@@ -35,25 +33,28 @@ public class MapReduceTask<T> extends RecursiveTask<Output<T>> {
     private final Input<T> input;
 
     public MapReduceTask(Input<T> input) {
-	this.input = input;
+        this.input = input;
     }
 
     @Override
     protected Output<T> compute() {
-	if (input.shouldBeComputedDirectly()) {
-	    return input.computeDirectly();
-	}
-	List<MapReduceTask<T>> subTasks = input.split();
 
-	for (int i = 1; i < subTasks.size(); i++) {
-	    subTasks.get(i).fork();
-	}
+        if (input.shouldBeComputedDirectly()) {
+            return input.computeDirectly();
+        }
 
-	Output<T> result = subTasks.get(0).compute();
-	for (int i = 1; i < subTasks.size(); i++) {
-	    result = result.reduce(subTasks.get(i).join());
-	}
+        List<MapReduceTask<T>> subTasks = input.split();
 
-	return result;
+        for (int i = 1; i < subTasks.size(); i++) {
+            subTasks.get(i).fork();
+        }
+
+        Output<T> result = subTasks.get(0).compute();
+
+        for (int i = 1; i < subTasks.size(); i++) {
+            result = result.reduce(subTasks.get(i).join());
+        }
+
+        return result;
     }
 }
